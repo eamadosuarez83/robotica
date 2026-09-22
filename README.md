@@ -11,6 +11,8 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 00 — Cómo usar el curso y preparar el entorno](bloques/bloque_00_bienvenida_y_entorno.md)
 - [Bloque 01 — Trigonometría y geometría del plano](bloques/bloque_01_trigonometria_geometria_plano.md)
 - [Bloque 02 — Vectores](bloques/bloque_02_vectores.md)
+- [Bloque 03 — Matrices como transformaciones](bloques/bloque_03_matrices_transformaciones.md)
+- [Bloque 04 — Cálculo para cosas que se mueven](bloques/bloque_04_calculo_para_cosas_que_se_mueven.md)
 
 ## Empezar
 
