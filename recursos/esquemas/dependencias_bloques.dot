@@ -1,0 +1,34 @@
+digraph dependencias {
+  rankdir=TB; bgcolor="transparent"; nodesep=0.25; ranksep=0.35;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10];
+  edge [color="#777777"];
+  subgraph cluster_I  { label="I. Fundamentos"; fontname="Helvetica"; color="#999999";
+    node [fillcolor="#eef6ee"];
+    b00 [label="00 Entorno y diagnóstico"]; b01 [label="01 Trigonometría"]; b02 [label="02 Vectores"];
+    b03 [label="03 Matrices como\ntransformaciones"]; b04 [label="04 Cálculo"]; b05 [label="05 EDO y simulación"];
+    b06 [label="06 Sólido rígido"]; }
+  subgraph cluster_II { label="II. Describir el robot"; fontname="Helvetica"; color="#999999";
+    node [fillcolor="#eef3fb"];
+    b07 [label="07 Morfología"]; b08 [label="08 Rotaciones"]; b09 [label="09 Euler y cuaterniones"];
+    b10 [label="10 Homogéneas"]; }
+  subgraph cluster_III { label="III. Cinemática"; fontname="Helvetica"; color="#999999";
+    node [fillcolor="#f3eefb"];
+    b11 [label="11 Directa y D-H"]; b12 [label="12 Inversa"]; b13 [label="13 Jacobiana"]; }
+  subgraph cluster_IV { label="IV. Dinámica"; fontname="Helvetica"; color="#999999";
+    node [fillcolor="#fbf6e6"];
+    b14 [label="14 Lagrange-Euler"]; b15 [label="15 Newton-Euler"]; b16 [label="16 Actuadores"]; }
+  subgraph cluster_V { label="V. Control"; fontname="Helvetica"; color="#999999";
+    node [fillcolor="#fbeeee"];
+    b17 [label="17 Realimentación"]; b18 [label="18 PID"]; b19 [label="19 Trayectorias"];
+    b20 [label="20 Control dinámico"]; }
+  subgraph cluster_VI { label="VI. Brazo real"; fontname="Helvetica"; color="#999999";
+    node [fillcolor="#eeeeee"];
+    b21 [label="21 Diseño y URDF"]; b22 [label="22 Hardware y\ncalibración"]; b23 [label="23 Tareas"];
+    b24 [label="24 Proyecto integrador", fillcolor="#fbeee6"]; }
+  b00 -> b01; b01 -> b02; b02 -> b03; b01 -> b04; b04 -> b05; b02 -> b06; b05 -> b06;
+  b03 -> b08; b07 -> b08; b08 -> b09; b08 -> b10;
+  b10 -> b11; b11 -> b12; b04 -> b12; b11 -> b13; b04 -> b13;
+  b13 -> b14; b06 -> b14; b05 -> b14; b14 -> b15; b14 -> b16;
+  b05 -> b17; b16 -> b18; b17 -> b18; b12 -> b19; b13 -> b19; b18 -> b20; b19 -> b20; b15 -> b20;
+  b15 -> b21; b16 -> b21; b21 -> b22; b18 -> b22; b20 -> b23; b22 -> b23; b23 -> b24;
+}

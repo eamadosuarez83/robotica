@@ -1,0 +1,31 @@
+# Curso de robótica — dependencias
+# Instalar dentro de un entorno virtual:
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+# Conflictos conocidos y alternativas: ver anexos/anexo_C_entorno.md
+
+# --- Cálculo y gráficas (Parte I en adelante) ---
+numpy>=1.24
+scipy>=1.10
+sympy>=1.12
+matplotlib>=3.7
+
+# --- Robótica (Parte II en adelante) ---
+spatialmath-python>=1.1
+roboticstoolbox-python>=1.1
+
+# --- Control (Parte V) ---
+control>=0.10
+
+# --- Simulación física (Bloques 15, 20, 21) ---
+pybullet>=3.2
+
+# --- Hardware (Bloque 22) ---
+pyserial>=3.5
+
+# --- Esquemas del curso ---
+schemdraw>=0.19
+graphviz>=0.20      # requiere además el programa: sudo apt install graphviz
+
+# --- Opcional: diseño mecánico paramétrico (Bloques 06 y 21) ---
+# build123d>=0.8

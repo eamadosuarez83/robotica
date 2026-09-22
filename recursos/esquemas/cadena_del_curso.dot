@@ -1,0 +1,12 @@
+digraph cadena {
+  rankdir=LR; bgcolor="transparent";
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=12, fillcolor="#eef3fb", color="#4a6fa5"];
+  edge [color="#4a6fa5", fontname="Helvetica", fontsize=10];
+  L [label="¿Dónde está?\nLocalización espacial\n(Bloques 08–10)"];
+  K [label="¿Cómo se relacionan\nsus partes?\nCinemática\n(Bloques 11–13)"];
+  D [label="¿Qué fuerzas\nhacen falta?\nDinámica\n(Bloques 14–16)"];
+  C [label="¿Cómo lograr que\nhaga lo que quiero?\nTrayectorias y control\n(Bloques 17–20)"];
+  R [label="Brazo real\n(Bloques 21–24)", fillcolor="#fbeee6", color="#b5651d"];
+  L -> K -> D -> C -> R;
+  R -> L [label="diagnóstico: se revisa de abajo hacia arriba", style=dashed, constraint=false, color="#b5651d"];
+}
