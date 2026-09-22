@@ -4,3 +4,19 @@ __pycache__/
 .ipynb_checkpoints/
 *.egg-info/
 curso-robotica.zip
+
+# PDFs generados (se compilan desde los .md con ./export_pdf.sh);
+# incluye tanto pdf/ como las versiones .pdf de recursos/imagenes/*.svg
+*.pdf
+
+# Artefactos de LaTeX / export_pdf.sh
+*.aux
+*.log
+*.out
+*.toc
+.build-*.md
+
+# Sistema operativo
+.DS_Store
+*~
+.*.swp

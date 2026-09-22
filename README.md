@@ -24,6 +24,15 @@ python codigo/bloque_00/verificar_entorno.py
 
 Luego se sigue el Bloque 00 en `bloques/bloque_00_bienvenida_y_entorno.md`.
 
+## Exportar a PDF
+
+```bash
+./export_pdf.sh                 # cada bloque por separado + el libro completo
+./export_pdf.sh bloque_02_vectores   # solo ese bloque
+```
+
+Genera los PDF en `pdf/` (carpeta ignorada por git; se recompila desde los `.md` cuando haga falta). Requiere Pandoc, TeX Live con LuaLaTeX, las fuentes DejaVu y Noto Color Emoji, y Graphviz (`dot`) para regenerar los esquemas de `recursos/`.
+
 ## Estructura del repositorio
 
 | Carpeta | Contenido |
