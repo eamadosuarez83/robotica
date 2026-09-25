@@ -23,6 +23,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 02 — Vectores](bloques/bloque_02_vectores.md)
 - [Bloque 03 — Matrices como transformaciones](bloques/bloque_03_matrices_transformaciones.md)
 - [Bloque 04 — Cálculo para cosas que se mueven](bloques/bloque_04_calculo_para_cosas_que_se_mueven.md)
+- [Bloque 05 — Ecuaciones diferenciales y simulación](bloques/bloque_05_ecuaciones_diferenciales_y_simulacion.md)
 
 ## Empezar
 
