@@ -4,6 +4,16 @@ Curso propio para diseñar, modelar, simular y controlar un brazo robótico con 
 
 El mapa completo de los 25 bloques (00–24), organizados en seis partes, está en [ESTRUCTURA.md](ESTRUCTURA.md).
 
+## Proyecto hermano
+
+Desde el Bloque 07 en adelante, el curso se apoya en
+[`robotica-manipuladores`](https://github.com/eamadosuarez83/robotica-manipuladores):
+un port a Python, ya probado contra MATLAB y con pytest, de un curso universitario con
+brazos de acrílico reales y modelos de robots industriales (ABB, KUKA). Qué se porta,
+de dónde y en qué bloque está en
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md). Los Bloques
+00–06 (fundamentos matemáticos) son independientes de esa integración.
+
 ## Estado
 
 En desarrollo. Bloques publicados hasta ahora:

@@ -188,6 +188,10 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 
 **Lectura:** Barrientos, cap. 2.
 
+**Integración:** los ejemplos de clasificación de brazos son robots reales tomados de
+`robotica-manipuladores` (acrílico, ABB IRB 6600, KUKA KR6), no inventados — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
+
 ---
 
 ### Bloque 08 — Localización espacial I: posición y rotación
@@ -210,6 +214,10 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 **Lectura:** Barrientos, cap. 3 (primera parte); Lynch & Park, *Modern Robotics*, cap. 3.
 
 **Aporta a la librería:** `robotica/rotaciones.py`.
+
+**Integración:** se porta casi 1:1 desde `transformaciones.py` de
+`robotica-manipuladores` (`rotx/roty/rotz`, misma convención de radianes) — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
 
 ---
 
@@ -235,6 +243,12 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 
 **Aporta a la librería:** `robotica/orientacion.py`.
 
+**Integración:** RPY y Euler ZXZ se portan de `transformaciones.py` de
+`robotica-manipuladores` (incluye el error real de `mat2zxz` documentado en su
+`docs/correcciones.md`, útil para "romperlo a propósito"); eje-ángulo y cuaterniones
+no están ahí y se escriben originales — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
+
 ---
 
 ### Bloque 10 — Matrices de transformación homogénea
@@ -257,6 +271,10 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 **Lectura:** Barrientos, cap. 3; Craig, *Introduction to Robotics*, cap. 2.
 
 **Aporta a la librería:** `robotica/homogeneas.py`.
+
+**Integración:** se porta casi 1:1 desde `transformaciones.py` de
+`robotica-manipuladores` (`transl`, `es_homogenea`) — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
 
 ---
 
@@ -283,6 +301,11 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 
 **Aporta a la librería:** `robotica/dh.py`, `robotica/brazo.py` (clase que guarda la tabla D-H).
 
+**Integración:** se porta casi 1:1 desde `dh.py` de `robotica-manipuladores`
+(`matriz_dh`, `directa`, `marcos`, `directa_simbolica`); el catálogo de robots reales
+de `robots.py` reemplaza inventar robots de ejemplo — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
+
 ---
 
 ### Bloque 12 — Cinemática inversa
@@ -306,6 +329,13 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 
 **Aporta a la librería:** `robotica/inversa.py`.
 
+**Integración:** el bloque más beneficiado — `robotica-manipuladores` ya tiene
+geométrica, numérica y desacoplo deducidas y verificadas para 5 robots reales
+(`inversa/geometrica.py`, `numerica.py`, `desacoplo.py`); sus dos bugs reales
+documentados (tabla DH que no correspondía a su inversa; criterio de convergencia
+`fval<=Error` en vez de `norm(fval)<=Error`) son el ejercicio de diagnóstico de la
+sección 5 — ver [docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
+
 ---
 
 ### Bloque 13 — Cinemática diferencial: la matriz Jacobiana
@@ -328,6 +358,10 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 **Lectura:** Barrientos, cap. 4 (matriz Jacobiana); Lynch & Park, cap. 5.
 
 **Aporta a la librería:** `robotica/jacobiana.py`.
+
+**Integración:** `robotica-manipuladores` no tiene cinemática diferencial; este
+bloque se escribe original — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
 
 ---
 
@@ -459,6 +493,13 @@ Esta parte existe porque la robótica no es difícil por sí misma: es difícil 
 
 **Aporta a la librería:** `robotica/trayectorias.py`.
 
+**Integración:** se porta casi 1:1 desde `trayectorias.py` de
+`robotica-manipuladores` (interpolador lineal, trapezoidal, línea, círculo); el perfil
+en S no está y se escribe original. Su bug real documentado (los interpoladores no
+llegaban al destino, descartaban el último punto de cada tramo) es material directo
+para "romperlo a propósito" — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
+
 ---
 
 ### Bloque 20 — Control dinámico del brazo completo
@@ -550,6 +591,12 @@ Diseñar, modelar, simular, construir y controlar un brazo de 4 GDL que recoge h
 6. Brazo físico calibrado con error de posición medido.
 7. Programa de la tarea como máquina de estados.
 8. **Manual de mantenimiento y diagnóstico**: tabla de síntomas, causas probables y cómo verificar cada una, siguiendo la cadena de diagnóstico de la filosofía.
+
+**Integración:** `tercer_corte_3gdl` y `prototipo_4gdl` de `robotica-manipuladores` son
+brazos de acrílico de 3-4 GDL ya construidos, con medidas reales — precedente fuerte a
+evaluar como base del proyecto en vez de diseñar desde cero (decisión pendiente para
+cuando se llegue aquí) — ver
+[docs/integracion_manipuladores.md](docs/integracion_manipuladores.md).
 
 ---
 
