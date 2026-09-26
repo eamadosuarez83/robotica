@@ -27,5 +27,5 @@ pyserial>=3.5
 schemdraw>=0.19
 graphviz>=0.20      # requiere además el programa: sudo apt install graphviz
 
-# --- Opcional: diseño mecánico paramétrico (Bloques 06 y 21) ---
-# build123d>=0.8
+# --- Diseño mecánico paramétrico (Bloque 21) ---
+build123d>=0.8
