@@ -41,6 +41,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 20 — Control dinámico del brazo completo](bloques/bloque_20_control_dinamico_del_brazo_completo.md) (cierra la Parte V)
 - [Bloque 21 — Diseño mecánico y modelo digital](bloques/bloque_21_diseno_mecanico_y_modelo_digital.md) (abre la Parte VI)
 - [Bloque 22 — Hardware, calibración y seguridad](bloques/bloque_22_hardware_calibracion_y_seguridad.md)
+- [Bloque 23 — Programación de tareas](bloques/bloque_23_programacion_de_tareas.md)
 
 ## Empezar
 
