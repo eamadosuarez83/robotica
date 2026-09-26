@@ -58,6 +58,8 @@ Cualquier proceso de diseño de ingeniería empieza fijando requisitos antes de 
 
 ## Tema 21.2 — Modelado paramétrico con build123d
 
+**Código:** `codigo/bloque_21/eslabon_parametrico.py`
+
 ### 1. El problema
 
 Diseñar cada eslabón "a mano" en un programa de CAD, y tener que rehacerlo cada vez que cambia una longitud de la tabla DH (Bloque 11), es lento y propenso a que el modelo 3D y el modelo matemático se desincronicen.
@@ -108,6 +110,8 @@ Cualquier flujo de diseño paramétrico (CAD generativo, diseño de PCB por cód
 ---
 
 ## Tema 21.3 — Masas, centros de masa e inercias desde el CAD
+
+**Código:** `codigo/bloque_21/eslabon_parametrico.py`
 
 ### 1. El problema
 
@@ -162,6 +166,8 @@ Cualquier software de CAD (SolidWorks, Fusion 360, FreeCAD) calcula propiedades 
 
 ## Tema 21.4 — Formato URDF
 
+**Código:** `codigo/bloque_21/generar_urdf.py`
+
 ### 1. El problema
 
 Los simuladores de robots (PyBullet, Tema 21.5; también Gazebo, RViz, MoveIt en el ecosistema ROS) no leen tablas DH ni código Python directamente: esperan un archivo de descripción en un formato estándar.
@@ -208,6 +214,8 @@ Cualquier robot descrito en ROS (la enorme mayoría de la robótica académica e
 ---
 
 ## Tema 21.5 — Simulación en PyBullet
+
+**Código:** `codigo/bloque_21/verificar_pybullet.py`
 
 ### 1. El problema
 

@@ -56,6 +56,8 @@ Casi cualquier robot industrial de una línea de ensamblaje se programa así: gu
 
 ## Tema 23.2 — Puntos de enseñanza y trayectorias guardadas
 
+**Código:** `codigo/bloque_23/tarea_recoger_dejar.py`
+
 ### 1. El problema
 
 Una vez que se tienen las posiciones relevantes de una tarea (por guiado, Tema 23.1, o calculadas), hace falta una forma de guardarlas y reutilizarlas sin recalcular nada cada vez.
@@ -111,6 +113,8 @@ Cualquier sistema con "posiciones guardadas" reutilizables: presets de una cáma
 
 ## Tema 23.3 — La tarea como máquina de estados
 
+**Código:** `codigo/bloque_23/tarea_recoger_dejar.py`
+
 ### 1. El problema
 
 "Recoger un huevo y dejarlo en la cubeta" no es un solo movimiento: son varias fases distintas (acercarse, tomar, levantar, trasladar, dejar, regresar), cada una con su propia lógica y sus propias condiciones de éxito o fracaso. Escribir esto como código lineal sin estructura se vuelve inmanejable apenas hay que manejar errores (Tema 23.4).
@@ -155,6 +159,8 @@ Cualquier proceso con fases bien definidas: un semáforo, el ciclo de una lavado
 ---
 
 ## Tema 23.4 — Manejo de errores
+
+**Código:** `codigo/bloque_23/tarea_recoger_dejar.py`
 
 ### 1. El problema
 
@@ -206,6 +212,8 @@ Cualquier sistema de producción automatizado (líneas de embotellado, clasifica
 ---
 
 ## Tema 23.5 — Tiempo de ciclo y cómo reducirlo
+
+**Código:** `codigo/bloque_23/tiempo_de_ciclo.py`
 
 ### 1. El problema
 

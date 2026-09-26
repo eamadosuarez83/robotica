@@ -6,6 +6,8 @@
 
 ## Tema 3.1 — La matriz como máquina que transforma vectores
 
+**Código:** `codigo/bloque_03/animador_transformaciones.py`
+
 ### 1. El problema
 
 $\begin{pmatrix}0&-1\\1&0\end{pmatrix}\begin{pmatrix}3\\0\end{pmatrix}=\begin{pmatrix}0\\3\end{pmatrix}$ se sabe calcular fila por columna. Pero esa cuenta, sola, no dice nada: no explica por qué esta operación —y no otra— es la que describe girar un brazo, cambiar de marco de referencia o deformar una pieza. Falta la pregunta que Barrientos y el resto del curso dan por sabida: ¿qué le *hace* una matriz a un vector?
@@ -66,6 +68,8 @@ Toda animación 2D/3D (una matriz de "modelo" ubica cada objeto en la escena), c
 ---
 
 ## Tema 3.2 — Composición de transformaciones: por qué el orden importa
+
+**Código:** `codigo/bloque_03/romper_orden_matrices.py`
 
 ### 1. El problema
 

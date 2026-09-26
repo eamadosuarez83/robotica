@@ -65,6 +65,8 @@ Resolver "¿qué combinación de ingredientes da este sabor?" (varias respuestas
 
 ## Tema 12.2 — Método geométrico: el brazo 2R con ley de cosenos
 
+**Código:** `codigo/bloque_12/inversa_analitica.py`
+
 ### 1. El problema
 
 Para el 2R del Bloque 01, ¿cómo se despeja $\theta_1,\theta_2$ a partir de $(x,y)$, sin recurrir todavía a ningún método numérico?
@@ -218,6 +220,8 @@ Es el método estándar en la industria para robots de 6 GDL con muñeca esféri
 
 ## Tema 12.5 — Métodos numéricos: cuando no hay atajo geométrico
 
+**Código:** `codigo/bloque_12/inversa_numerica_generica.py`, `codigo/bloque_12/romper_ik.py`
+
 ### 1. El problema
 
 Muchos brazos (sin muñeca esférica, o con más GDL de los que el desacoplo puede aprovechar) no tienen una fórmula cerrada razonable. Hace falta un método que funcione para **cualquier** tabla DH, a costa de no dar una fórmula exacta sino una aproximación iterativa.
@@ -273,7 +277,7 @@ Métodos de optimización basados en gradiente en aprendizaje automático (la Ja
 - B1. Para el 2R del Tema 12.2, escribir una iteración de Jacobiana transpuesta a mano (sin calcular $J$ explícitamente, solo la estructura de la fórmula) partiendo de $q_0=(0,0)$ hacia $(0.1,0.1)$.
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
-- C1. Correr `codigo/bloque_12/romper_newton_raphson.py`: arranca `inversa_numerica` desde varias semillas, incluida una deliberadamente mala (por ejemplo, una postura ya en el límite articular), y compara cuántas convergen y a qué solución.
+- C1. Correr `codigo/bloque_12/romper_ik.py` (función `parte2_semilla_mala`): arranca `inversa_numerica` desde varias semillas, incluida una deliberadamente mala (por ejemplo, una postura ya en el límite articular), y compara cuántas convergen y a qué solución.
 
 ---
 
@@ -330,6 +334,8 @@ Cualquier sistema con múltiples soluciones válidas para una tarea (rutas de na
 
 ## Tema 12.7 — Puntos fuera del espacio de trabajo
 
+**Código:** `codigo/bloque_12/romper_ik.py`
+
 ### 1. El problema
 
 Si se le pide al robot un punto que no puede alcanzar, hace falta saberlo **antes** de mandar cualquier orden a los motores — no después de que el brazo intente, sin éxito, llegar ahí.
@@ -379,7 +385,7 @@ Cualquier sistema que deba distinguir "no tengo la respuesta todavía" de "esto 
 - B1. Para el 2R con $L_1=0.30,L_2=0.20$ m, dar el rango de distancias $r=\sqrt{x^2+y^2}$ alcanzables (mínimo y máximo).
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
-- C1. Correr `codigo/bloque_12/romper_punto_fuera_de_alcance.py`: pide un punto fuera del espacio de trabajo del 2R al método geométrico y al numérico, y compara qué devuelve cada uno (`None` limpio contra un resultado numérico que no converge).
+- C1. Correr `codigo/bloque_12/romper_ik.py` (función `parte1_fuera_de_alcance`): pide un punto fuera del espacio de trabajo del 2R al método geométrico y al numérico, y compara qué devuelve cada uno (`None` limpio contra un resultado numérico que no converge).
 
 ## Lo que este bloque agrega a `codigo/robotica/`
 

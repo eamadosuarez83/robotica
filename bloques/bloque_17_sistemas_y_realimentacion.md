@@ -177,6 +177,8 @@ La función de transferencia es el lenguaje universal del control clásico: filt
 
 ## Tema 17.4 — Respuesta al escalón
 
+**Código:** `codigo/bloque_17/modelo_articulacion.py`
+
 ### 1. El problema
 
 Los polos (Tema 17.3) determinan cualitativamente la respuesta, pero para especificar qué tan rápido y qué tan preciso debe ser un controlador hacen falta números concretos, medidos sobre una entrada de prueba estándar: un **escalón** (pedir, de golpe, un ángulo nuevo y constante).
@@ -234,6 +236,8 @@ Evaluar cualquier sistema de control (climatización, suspensión de un vehícul
 
 ## Tema 17.5 — Estabilidad: la ubicación de los polos
 
+**Código:** `codigo/bloque_17/romper_retardo.py`
+
 ### 1. El problema
 
 Antes de medir tiempos de subida o sobrepaso, hay una pregunta más básica: ¿el sistema siquiera se asienta en algún valor, o crece sin límite? Hace falta un criterio rápido, sin simular nada, para saberlo con solo mirar la función de transferencia.
@@ -290,6 +294,8 @@ Análisis de estabilidad de cualquier sistema dinámico: circuitos con realiment
 ---
 
 ## Tema 17.6 — Diagramas de bloques
+
+**Código:** `codigo/bloque_17/modelo_articulacion.py`
 
 ### 1. El problema
 

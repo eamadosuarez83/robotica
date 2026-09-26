@@ -13,6 +13,8 @@ devuelven radianes. El polinomio cúbico, el quíntico y el perfil en S son orig
 
 ## Tema 19.1 — Espacio articular contra espacio cartesiano
 
+**Código:** `codigo/bloque_19/comparar_espacios.py`
+
 ### 1. El problema
 
 Hay dos formas de decir "muévete de aquí hasta allá": especificar cómo cambian los **ángulos de las articulaciones** en el tiempo, o especificar cómo se mueve la **posición de la pinza** en el espacio (una línea recta, por ejemplo). No son lo mismo, y elegir mal produce un movimiento que no es el esperado.
@@ -60,6 +62,8 @@ Cualquier robot industrial que suelda o pinta en línea recta usa interpolación
 ---
 
 ## Tema 19.2 — Interpoladores: lineal, cúbico, quíntico
+
+**Código:** `codigo/bloque_19/comparar_perfiles.py`
 
 ### 1. El problema
 
@@ -113,6 +117,8 @@ Animación por computadora (interpolación "ease-in/ease-out" es, esencialmente,
 ---
 
 ## Tema 19.3 — Perfil trapezoidal y perfil en S
+
+**Código:** `codigo/bloque_19/comparar_perfiles.py`
 
 ### 1. El problema
 
@@ -215,6 +221,8 @@ Cualquier trayectoria de dibujo o mecanizado con varios puntos de paso (la `poli
 
 ## Tema 19.5 — Línea recta cartesiana con cinemática inversa
 
+**Código:** `codigo/bloque_19/romper_singularidad_trayectoria.py`
+
 ### 1. El problema
 
 Para que la pinza se mueva realmente en línea recta (no solo los ángulos por separado, Tema 19.1), hace falta resolver la cinemática inversa (Bloque 12) en cada instante de la línea — y algo puede salir mal en el camino, no solo en los extremos.
@@ -272,6 +280,8 @@ Cualquier planificador de movimiento cartesiano de un robot industrial revisa, a
 ---
 
 ## Tema 19.6 — Muestreo de la trayectoria y el error histórico de no llegar al destino
+
+**Código:** `codigo/bloque_19/romper_descartar_punto_final.py`
 
 ### 1. El problema
 

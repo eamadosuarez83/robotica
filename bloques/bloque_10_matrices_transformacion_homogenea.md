@@ -216,6 +216,8 @@ Cualquier cadena de sensores y actuadores con marcos propios (cámara sobre un d
 
 ## Tema 10.5 — Inversa de una transformación homogénea, sin invertir la 4×4 completa
 
+**Código:** `codigo/bloque_10/romper_inversa_transpuesta.py`
+
 ### 1. El problema
 
 Si se conoce $T_{AB}$ (B visto desde A), a menudo hace falta $T_{BA}$ (A visto desde B) — por ejemplo, saber dónde está la base vista desde la cámara, no al revés. Invertir una matriz de $4\times4$ con el método general (Bloque 03) es más costoso y menos preciso numéricamente de lo necesario: la estructura especial de una transformación homogénea permite un atajo.
@@ -264,6 +266,8 @@ Invertir la pose de una cámara para saber dónde está el mundo respecto a ella
 ---
 
 ## Tema 10.6 — Grafos de transformaciones: cerrar el ciclo
+
+**Código:** `codigo/bloque_10/escena_mesa_camara_huevo.py`
 
 ### 1. El problema
 

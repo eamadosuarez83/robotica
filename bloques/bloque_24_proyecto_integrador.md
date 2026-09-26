@@ -44,7 +44,9 @@ Los cuatro requisitos del Bloque 21 (Tema 21.1), fijados para esta tarea concret
 
 ## Entregable 2 — Tabla DH, cinemática directa, inversa y Jacobiana
 
-`codigo/bloque_24/cinematica_y_dinamica.py` (función `parte_cinematica`) evalúa la directa en
+**Código:** `codigo/bloque_24/cinematica_y_dinamica.py` (función `parte_cinematica`)
+
+Esta función evalúa la directa en
 $\vec q=\vec 0$, genera 8 posturas aleatorias, calcula su pose con `robotica.dh.directa` (Bloque
 11), resuelve la inversa con `robotica.inversa.inversa_numerica` (Bloque 12) — este brazo, a
 diferencia del 3R plano de los Bloques 12/19/23, no tiene una inversa geométrica cerrada simple
@@ -59,7 +61,9 @@ que ninguna de las posturas de prueba está cerca de una singularidad.
 
 ## Entregable 3 — Modelo dinámico y dimensionamiento de motores
 
-`codigo/bloque_24/cinematica_y_dinamica.py` (función `parte_dinamica`) deduce el modelo con
+**Código:** `codigo/bloque_24/cinematica_y_dinamica.py` (función `parte_dinamica`)
+
+Esta función deduce el modelo con
 Lagrange (Bloque 14), con masas puntuales en cada eslabón (la misma simplificación del Bloque 14
 para el 2R, aplicada aquí a la geometría 3D real de `prototipo_4gdl` en vez de un caso plano) y
 verifica $M(\vec q)$ simétrica y definida positiva (Bloque 14, Tema 14.6) en 30 posturas
@@ -94,6 +98,8 @@ mismo tipo de caso límite que ya expuso el Entregable 4.
 
 ## Entregable 4 — Modelo CAD paramétrico y URDF
 
+**Código:** `codigo/bloque_24/generar_urdf_proyecto.py`, `codigo/bloque_24/verificar_pybullet_proyecto.py`
+
 `codigo/bloque_24/generar_urdf_proyecto.py` construye cada eslabón como un prisma con build123d
 (Bloque 21, Tema 21.2), parametrizado por las longitudes de la tabla DH, calcula sus propiedades
 de masa (Tema 21.3) y genera el URDF completo con la reindexación DH-estándar→URDF del Bloque 21
@@ -117,6 +123,8 @@ matriz con `robotica.rotaciones` y convertirla a RPY de verdad con `robotica.ori
 enseñó, aplicado aquí a un problema real de exportación a URDF.
 
 ## Entregable 5 — Generador de trayectorias y controlador, validados en simulación
+
+**Código:** `codigo/bloque_24/tarea_proyecto.py`
 
 `codigo/bloque_24/tarea_proyecto.py` resuelve la cinemática inversa de cinco puntos de enseñanza
 (Bloque 23, Tema 23.2) una sola vez —`reposo`, `aprox_recoger`, `recoger`, `aprox_depositar`,
@@ -158,6 +166,8 @@ Entregable 2):
    de posición medido" que pide este entregable.
 
 ## Entregable 7 — Programa de la tarea como máquina de estados
+
+**Código:** `codigo/bloque_24/tarea_proyecto.py` (clase `TareaProyecto`)
 
 `codigo/bloque_24/tarea_proyecto.py` (clase `TareaProyecto`) implementa la misma máquina de
 estados del Bloque 23 (`ESPERANDO → APROXIMAR_RECOGER → RECOGER → LEVANTAR → TRASLADAR → DEJAR →

@@ -180,6 +180,8 @@ La Jacobiana (Bloque 13) es, literalmente, la matriz de todas las derivadas parc
 
 ## Tema 4.4 — Regla de la cadena con varias variables y el gradiente
 
+**Código:** `codigo/bloque_04/derivar_2r_sympy.py`
+
 ### 1. El problema
 
 Los ángulos del brazo no son constantes: son funciones del tiempo, $\theta_1(t)$, $\theta_2(t)$, porque los motores giran. Para obtener la velocidad de la punta hace falta derivar $x(\theta_1(t),\theta_2(t))$ respecto a $t$ — una función compuesta de dos variables que a su vez dependen de una tercera.
@@ -301,6 +303,8 @@ Control linealizado alrededor de un punto de operación (Parte V), el método de
 ---
 
 ## Tema 4.6 — Método de Newton-Raphson
+
+**Código:** `codigo/bloque_04/romper_diferencias_finitas.py`
 
 ### 1. El problema
 

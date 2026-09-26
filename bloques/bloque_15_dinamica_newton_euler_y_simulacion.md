@@ -9,6 +9,8 @@ Original: `robotica-manipuladores` no tiene dinámica de manipuladores más all�
 
 ## Tema 15.1 — El algoritmo recursivo: velocidades hacia afuera, fuerzas hacia adentro
 
+**Código:** `codigo/bloque_15/newton_euler_vs_lagrange.py`
+
 ### 1. El problema
 
 El Bloque 14 dedujo $M,C,G$ del 2R con SymPy en unos segundos. Para un brazo de 6 GDL, la misma deducción simbólica genera expresiones de miles de términos, y evaluarlas numéricamente en cada instante de una simulación o de un lazo de control (Bloque 20, cientos de veces por segundo) es demasiado lento. Hace falta un método que dé el mismo resultado sin pasar por una fórmula simbólica gigante.
@@ -59,6 +61,8 @@ Cualquier algoritmo recursivo que evita repetir cálculo global aprovechando est
 
 ## Tema 15.2 — Costo computacional: Newton-Euler contra Lagrange
 
+**Código:** `codigo/bloque_15/costo_computacional.py`
+
 ### 1. El problema
 
 Ambos métodos dan el mismo resultado (Tema 15.1). ¿Por qué entonces se enseñan los dos, en vez de quedarse con uno solo?
@@ -106,6 +110,8 @@ La misma disyuntiva "fórmula cerrada para entender, algoritmo eficiente para ca
 ---
 
 ## Tema 15.3 — Dinámica directa para simular
+
+**Código:** `codigo/bloque_15/simular_2r_par_constante.py`
 
 ### 1. El problema
 
@@ -171,6 +177,8 @@ Cualquier simulador físico de un robot o mecanismo articulado (PyBullet, MuJoCo
 ---
 
 ## Tema 15.4 — Modelo en espacio de estados del brazo
+
+**Código:** `codigo/bloque_15/simular_2r_par_constante.py`
 
 ### 1. El problema
 

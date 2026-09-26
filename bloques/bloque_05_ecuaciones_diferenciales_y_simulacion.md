@@ -118,6 +118,8 @@ El espacio de estados de un sistema de control (Bloque 17 en adelante), el estad
 
 ## Tema 5.3 — Ejemplos fundacionales: masa-resorte-amortiguador y péndulo simple
 
+**Código:** `codigo/bloque_05/masa_resorte_amortiguador.py`
+
 ### 1. El problema
 
 Antes de simular un brazo completo hace falta dominar dos sistemas mucho más simples que reaparecen una y otra vez en el curso: uno que oscila con fricción (una articulación con un resorte de retorno, o cualquier vibración mecánica) y uno que oscila por gravedad (la aproximación más simple de un eslabón colgando).
@@ -246,6 +248,8 @@ La respuesta al escalón de cualquier sistema de control de segundo orden (Bloqu
 
 ## Tema 5.5 — Solución numérica: Euler y Runge-Kutta 4
 
+**Código:** `codigo/bloque_05/simular_pendulo.py`
+
 ### 1. El problema
 
 El péndulo sin linealizar, la dinámica completa de un brazo (Bloque 14) y casi todo lo que el curso simula de aquí en adelante no tiene solución analítica. Hace falta un método que, partiendo del estado inicial, avance paso a paso en el tiempo y calcule una aproximación de la solución.
@@ -313,6 +317,8 @@ Simulación de cualquier sistema dinámico (circuitos, clima, órbitas), la din�
 ---
 
 ## Tema 5.6 — Paso de integración, estabilidad numérica y energía que aparece de la nada
+
+**Código:** `codigo/bloque_05/romper_euler_paso_grande.py`
 
 ### 1. El problema
 

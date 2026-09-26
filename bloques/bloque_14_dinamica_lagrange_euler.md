@@ -60,6 +60,8 @@ Cualquier sistema de control: "qué entrada hace falta para este resultado" (inv
 
 ## Tema 14.2 — El lagrangiano y la ecuación de Lagrange
 
+**Código:** `codigo/bloque_14/lagrange_pendulo.py`
+
 ### 1. El problema
 
 Deducir la dinámica de un brazo con las leyes de Newton "a mano", eslabón por eslabón, sumando fuerzas de reacción entre piezas conectadas, es tedioso y propenso a errores incluso para 2 GDL. Hace falta un método que llegue a las mismas ecuaciones partiendo de una sola función escalar.
@@ -115,6 +117,8 @@ La mecánica lagrangiana es el lenguaje estándar de la física teórica (desde 
 
 ## Tema 14.3 — Péndulo simple y doble como primeros casos
 
+**Código:** `codigo/bloque_14/lagrange_pendulo_doble.py`
+
 ### 1. El problema
 
 Antes de encarar un brazo completo, conviene practicar el método con dos casos progresivamente más complejos: el péndulo simple (ya resuelto con Newton, Bloque 05, y ahora con Lagrange, Tema 14.2) y el péndulo doble, el primer caso con **dos** coordenadas generalizadas acopladas — el primer sistema verdaderamente representativo de lo que hace falta para un brazo de varios eslabones.
@@ -167,6 +171,8 @@ El péndulo doble es el ejemplo introductorio estándar de sistemas caóticos y 
 ---
 
 ## Tema 14.4 — El brazo 2R completo
+
+**Código:** `codigo/bloque_14/lagrange_2r.py`
 
 ### 1. El problema
 
@@ -222,6 +228,8 @@ Es, literalmente, el modelo que reutilizan los Bloques 15 a 20 para simular, con
 
 ## Tema 14.5 — La forma general $M(\vec q)\ddot{\vec q}+C(\vec q,\dot{\vec q})\dot{\vec q}+G(\vec q)=\vec\tau$
 
+**Código:** `codigo/bloque_14/lagrange_2r.py`
+
 ### 1. El problema
 
 El resultado del Tema 14.4, escrito a mano para un caso particular, hay que entenderlo también en su forma general, la que aparece en todos los libros de robótica y con la que se piensa la dinámica de cualquier brazo, no solo del 2R.
@@ -276,6 +284,8 @@ Esta forma exacta (matriz de masas + Coriolis + gravedad) aparece en la dinámic
 ---
 
 ## Tema 14.6 — Propiedades de $M$: simétrica y definida positiva
+
+**Código:** `codigo/bloque_14/lagrange_2r.py`
 
 ### 1. El problema
 

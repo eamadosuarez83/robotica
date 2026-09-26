@@ -166,6 +166,8 @@ La orientación de una cámara en gráficos 3D, la actitud de una nave o un dron
 
 ## Tema 8.4 — Rotaciones básicas alrededor de x, y, z
 
+**Código:** `codigo/bloque_08/visualizador_marcos_3d.py`
+
 ### 1. El problema
 
 Antes de componer rotaciones arbitrarias, hace falta la forma explícita de las tres más simples: girar puro alrededor de cada eje del marco fijo.
@@ -226,6 +228,8 @@ Cualquier giro puro alrededor de un eje principal: la rueda de un vehículo (alr
 
 ## Tema 8.5 — Composición de rotaciones: ejes fijos contra ejes móviles
 
+**Código:** `codigo/bloque_08/romper_orden_rotaciones.py` (función `parte1_orden_de_composicion`)
+
 ### 1. El problema
 
 Un procedimiento de ensamblaje dice "gira 90° en z, luego 90° en el nuevo eje x". Otro dice "gira 90° en z, luego 90° en el eje x *original*". Son instrucciones distintas que llevan a orientaciones finales distintas, y hay que saber traducir cada una a una multiplicación de matrices sin ambigüedad.
@@ -280,6 +284,8 @@ Instrucciones de vuelo de un avión (¿guiñada respecto a la Tierra o respecto 
 ---
 
 ## Tema 8.6 — Propiedades de una matriz de rotación: por qué 9 números describen solo 3 GDL
+
+**Código:** `codigo/bloque_08/romper_orden_rotaciones.py` (función `parte2_reflexion`)
 
 ### 1. El problema
 

@@ -273,6 +273,8 @@ Cualquier diseño de ingeniería reserva margen entre lo que el modelo predice y
 
 ## Tema 16.6 — Dimensionamiento: par pico, RMS, velocidad, margen de seguridad
 
+**Código:** `codigo/bloque_16/hoja_dimensionamiento.py`, `codigo/bloque_16/romper_dimensionamiento_estatico.py`
+
 ### 1. El problema
 
 Con todos los ingredientes anteriores, falta el procedimiento completo: de una trayectoria deseada (Bloque 19, adelantado aquí de forma simplificada) y el modelo dinámico (Bloques 14-15), llegar a la especificación de motor y reductor que hace falta comprar.

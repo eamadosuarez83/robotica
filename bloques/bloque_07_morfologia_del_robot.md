@@ -114,6 +114,8 @@ Por qué un dron necesita al menos 4 actuadores independientes para controlar po
 
 ## Tema 7.3 — Configuraciones clásicas y su espacio de trabajo
 
+**Código:** `codigo/bloque_07/espacios_de_trabajo.py`
+
 ### 1. El problema
 
 No todos los brazos se parecen: algunos se mueven en línea recta, otros giran. La forma en que se combinan articulaciones rotacionales y prismáticas define familias completas de robots, cada una con ventajas para cierto tipo de tarea, y todas comparten nombre con lo que describen: la forma de su espacio de trabajo.

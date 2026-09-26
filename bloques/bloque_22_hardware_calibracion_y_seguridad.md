@@ -56,6 +56,8 @@ Cualquier sistema embebido con una parte de planificación (más lenta, más com
 
 ## Tema 22.2 — Comunicación serie: protocolo simple
 
+**Código:** `codigo/bloque_22/protocolo_serie.py`
+
 ### 1. El problema
 
 El computador y el microcontrolador (Tema 22.1) se comunican por un cable serie: una secuencia de bytes, sin ninguna estructura implícita. Hace falta un formato acordado de antemano —un protocolo— para que ambos lados sepan interpretar la misma secuencia de bytes de la misma forma, y para detectar si algo se corrompió en el camino.
@@ -115,6 +117,8 @@ Cualquier protocolo de comunicación serio (TCP/IP, USB, I2C) incluye verificaci
 
 ## Tema 22.3 — Calibración: ceros, sentido de giro, relación señal-ángulo
 
+**Código:** `codigo/bloque_22/calibracion.py`
+
 ### 1. El problema
 
 El problema que abre el bloque: el modelo (Bloque 11) dice que $\theta_1=0°$ corresponde a una postura concreta, pero el servo físico, al recibir la señal que "debería" ser $0°$, tiene el brazo torcido 7° — el cero del modelo y el cero mecánico real no coinciden, y nada en el software lo sabe hasta que se calibra.
@@ -166,6 +170,8 @@ Calibrar el cero de cualquier instrumento de medición (una balanza, un sensor d
 ---
 
 ## Tema 22.4 — Lectura de sensores: potenciómetros, encoders, ruido
+
+**Código:** `codigo/bloque_22/calibracion.py`
 
 ### 1. El problema
 
@@ -265,6 +271,8 @@ Cualquier máquina real se desvía de su modelo ideal por estas mismas tres caus
 ---
 
 ## Tema 22.6 — Seguridad: límites, parada de emergencia, pérdida de comunicación
+
+**Código:** `codigo/bloque_22/romper_signo_invertido.py`
 
 ### 1. El problema
 

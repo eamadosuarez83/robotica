@@ -144,6 +144,8 @@ $$c = \sqrt{L_1^2+L_2^2-2L_1L_2\cos(30°)} = \sqrt{0.09+0.04-0.12\cdot0.866} \ap
 
 ## Tema 1.3 — `atan2` contra `atan`
 
+**Código:** `codigo/bloque_01/romper_atan.py`
+
 ### 1. El problema
 
 Se tiene un vector $(x,y)$ y se quiere el ángulo que forma con el eje x. La tentación es $\theta = \arctan(y/x)$. Con $(x,y)=(-3,4)$ eso da el mismo resultado que con $(3,-4)$, porque el cociente $y/x$ es el mismo con los dos signos invertidos: $\arctan$ no puede distinguir en qué cuadrante está el punto. Un brazo que use esa fórmula manda la punta al lado opuesto del que se le pidió.
@@ -203,6 +205,8 @@ $\text{atan2}(4,-3) \approx 126.9°$ — correcto: cuadrante II. La diferencia c
 ---
 
 ## Tema 1.4 — Coordenadas polares y la cinemática directa del brazo 2R
+
+**Código:** `codigo/bloque_01/cinematica_2r.py`
 
 ### 1. El problema
 

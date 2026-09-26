@@ -158,6 +158,8 @@ Cualquier procedimiento de ingeniería con pasos fijos y verificables (una check
 
 ## Tema 11.4 — La matriz $^{i-1}A_i$ y la cadena completa
 
+**Código:** `codigo/bloque_11/dh_2r_3r.py`
+
 ### 1. El problema
 
 Con los cuatro parámetros DH de cada articulación (Tema 11.2), falta la fórmula concreta que los convierte en la transformación homogénea (Bloque 10) entre un marco y el siguiente, y la forma de encadenarlas todas.
@@ -220,6 +222,8 @@ Cualquier librería profesional de robótica (Robotics Toolbox, ROS/MoveIt) calc
 
 ## Tema 11.5 — Casos resueltos: del 2R a un catálogo de robots reales
 
+**Código:** `codigo/bloque_11/animar_deslizadores.py`
+
 ### 1. El problema
 
 La teoría de los Temas 11.2–11.4 se vuelve concreta solo al aplicarla a brazos reales, con sus propias particularidades geométricas (ejes desplazados, ángulos $\alpha$ no triviales) — el objetivo de este tema es practicar con casos que no sean el 2R idealizado.
@@ -274,6 +278,8 @@ Cualquier "banco de pruebas" de robots reales para practicar algoritmos antes de
 ---
 
 ## Tema 11.6 — DH estándar contra DH modificado (Craig)
+
+**Código:** `codigo/bloque_11/romper_convencion_dh.py`
 
 ### 1. El problema
 

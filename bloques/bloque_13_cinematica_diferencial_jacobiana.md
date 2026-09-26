@@ -13,6 +13,8 @@ extensión natural para quien quiera profundizar).
 
 ## Tema 13.1 — De los ángulos a las velocidades: $\dot{\vec x}=J(\vec q)\dot{\vec q}$
 
+**Código:** `codigo/bloque_13/jacobiana_2r.py`
+
 ### 1. El problema
 
 La cinemática directa (Bloque 11) relaciona posiciones: $\vec x=f(\vec q)$. Pero un controlador de velocidad (mover la pinza a 5 cm/s en línea recta, Bloque 19) necesita la relación entre **velocidades**: qué tan rápido debe girar cada motor para que la pinza se mueva a la velocidad deseada.
@@ -121,6 +123,8 @@ Cualquier "matriz de sensibilidad" calculada derivando directamente una fórmula
 
 ## Tema 13.3 — Jacobiana geométrica: con los ejes de cada articulación
 
+**Código:** `codigo/bloque_13/jacobiana_2r.py`
+
 ### 1. El problema
 
 Derivar la cinemática directa a mano (Tema 13.2) se vuelve pesado para más de 2-3 GDL, y además mezcla singularidades de representación con singularidades físicas. Hace falta una fórmula directa, en términos de la geometría del brazo (los ejes de cada articulación), sin pasar por ninguna derivada explícita.
@@ -228,6 +232,8 @@ Control de velocidad de brazos robóticos en tiempo real, teleoperación (traduc
 
 ## Tema 13.5 — Singularidades
 
+**Código:** `codigo/bloque_13/romper_singularidad.py`
+
 ### 1. El problema
 
 En ciertas posturas, ninguna combinación de velocidades articulares —por rápido que giren los motores— puede producir cierta dirección de movimiento de la pinza. Hace falta saber identificar esas posturas antes de pedirle al robot algo imposible.
@@ -285,6 +291,8 @@ Determinante cero como aplastamiento del espacio (Bloque 03, Tema 3.4) — esta 
 
 ## Tema 13.6 — Manipulabilidad
 
+**Código:** `codigo/bloque_13/mapa_manipulabilidad.py`
+
 ### 1. El problema
 
 "Cerca de una singularidad" (Tema 13.5) es cualitativo. Hace falta un número que resuma, para cualquier postura, qué tan lejos está de perder movilidad en alguna dirección — útil para comparar posturas y para elegir, entre varias soluciones de cinemática inversa (Bloque 12, Tema 12.6), la más "cómoda".
@@ -335,6 +343,8 @@ El número de condición de una matriz (una medida relacionada, usada en anális
 ---
 
 ## Tema 13.7 — Estática: $\vec\tau=J^T\vec F$
+
+**Código:** `codigo/bloque_13/estatica_carga.py`
 
 ### 1. El problema
 

@@ -145,6 +145,8 @@ Si esto no corre, hay que resolverlo antes de seguir: el resto del curso depende
 
 ## 5. La primera figura: un brazo que se mueve
 
+**Código:** `codigo/bloque_00/primera_figura.py`
+
 Antes de deducir nada, conviene ver la forma final de lo que se va a construir. `codigo/bloque_00/primera_figura.py` dibuja un brazo plano de dos eslabones ("dos palitos") con dos deslizadores que controlan el ángulo del hombro y del codo. Mover los deslizadores mueve la punta del brazo.
 
 ![El brazo plano de dos eslabones con sus dos deslizadores](../recursos/capturas/bloque_00/primera_figura.png)
@@ -155,6 +157,8 @@ Todavía no se explica la fórmula que ubica la punta (eso es el Bloque 01); por
 - Cerca de ciertas posturas, mover un poco un deslizador mueve mucho la punta, y en otras casi no la mueve: eso son singularidades y manipulabilidad (Bloque 13).
 
 ## 6. Laboratorio
+
+**Código:** `codigo/bloque_00/verificar_entorno.py`
 
 1. Crear el entorno virtual e instalar `requirements.txt` (sección 3).
 2. Correr `python codigo/bloque_00/verificar_entorno.py` y resolver cualquier `✗` que aparezca antes de seguir.

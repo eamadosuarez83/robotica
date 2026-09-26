@@ -6,6 +6,8 @@
 
 ## Tema 18.1 — Acción proporcional, integral y derivativa
 
+**Código:** `codigo/bloque_18/pid_articulacion.py`
+
 ### 1. El problema
 
 El Bloque 17 (Tema 17.4) ya mostró un controlador **proporcional** puro: $u=K_p e$. Funciona, pero dos problemas típicos aparecen en la práctica: el sistema se asienta un poco *por debajo* del valor pedido (un **error en estado estacionario** persistente, más notorio cuando hay una carga constante como la gravedad sobre un brazo colgando), y subir $K_p$ para corregirlo produce oscilaciones cada vez más marcadas.
@@ -113,6 +115,8 @@ Cualquier sistema multivariable controlado con lazos independientes por canal (c
 
 ## Tema 18.3 — Sintonía: a mano, Ziegler-Nichols, por ubicación de polos
 
+**Código:** `codigo/bloque_18/pid_articulacion.py`
+
 ### 1. El problema
 
 El PID tiene tres números que ajustar ($K_p,K_i,K_d$). Hace falta un procedimiento —no solo prueba y error indefinida— para elegirlos.
@@ -167,6 +171,8 @@ Cualquier sintonía de controlador en la industria empieza con alguna heurístic
 
 ## Tema 18.4 — Saturación del actuador y efecto *windup*
 
+**Código:** `codigo/bloque_18/romper_windup.py`
+
 ### 1. El problema
 
 Ningún motor real da par infinito (Bloque 16): hay un límite físico de saturación. Cuando el error es grande y persiste (por ejemplo, al arrancar lejos del punto deseado), el término integral (Tema 18.1) sigue acumulando **aunque el actuador ya esté saturado y no pueda aplicar más**, y ese exceso acumulado ("*windup*") causa un sobrepaso grande y lento de corregir cuando el sistema finalmente se acerca al punto deseado.
@@ -218,6 +224,8 @@ Cualquier controlador PID sobre un actuador real (válvulas, motores, calefactor
 
 ## Tema 18.5 — Derivada del error contra derivada de la medición
 
+**Código:** `codigo/bloque_18/pid_articulacion.py`
+
 ### 1. El problema
 
 Cambiar la referencia $r(t)$ de golpe (un escalón, Bloque 17 Tema 17.4) hace que $\dot e=\dot r-\dot y$ tenga un pico enorme en el instante del cambio (porque $\dot r$ es, en principio, infinito en un escalón ideal) — un "golpe derivativo" (*derivative kick*) que puede saturar el actuador innecesariamente, sin que el sistema realmente lo necesite.
@@ -265,6 +273,8 @@ Cualquier controlador PID industrial real implementa "derivada sobre la medició
 ---
 
 ## Tema 18.6 — Control digital: periodo de muestreo y discretización
+
+**Código:** `codigo/bloque_18/romper_muestreo_lento.py`
 
 ### 1. El problema
 

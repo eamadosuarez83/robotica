@@ -12,6 +12,8 @@ dimensionamiento (Bloque 16).
 
 ## Tema 20.1 — Limitaciones del control independiente por articulación
 
+**Código:** `codigo/bloque_20/control_comparado.py`
+
 ### 1. El problema
 
 El Bloque 18 diseñó un PID por articulación tratando el acoplamiento con las demás como una perturbación (Bloque 18, Tema 18.2). Hace falta ver, con números, qué tan bien —o mal— funciona esa aproximación cuando el brazo completo se mueve.
@@ -68,6 +70,8 @@ Cualquier sistema multivariable con lazos independientes (Bloque 18, Tema 18.2) 
 
 ## Tema 20.2 — Control PD con compensación de gravedad
 
+**Código:** `codigo/bloque_20/control_comparado.py`
+
 ### 1. El problema
 
 Antes de usar el modelo dinámico completo (Tema 20.3), hay un paso intermedio simple y muy usado en la práctica: cancelar explícitamente **solo** el término de gravedad, el que más contribuye al error persistente de un brazo que sostiene su propio peso (Bloque 18, Tema 18.1 ya mostró esto para una articulación colgando).
@@ -118,6 +122,8 @@ Compensar el término más significativo y más fácil de calcular de una pertur
 ---
 
 ## Tema 20.3 — Par calculado (*computed torque*)
+
+**Código:** `codigo/bloque_20/control_comparado.py`
 
 ### 1. El problema
 
@@ -179,6 +185,8 @@ Linealización por realimentación (*feedback linearization*) es una técnica ge
 
 ## Tema 20.4 — Prealimentación más realimentación
 
+**Código:** `codigo/bloque_20/control_comparado.py`
+
 ### 1. El problema
 
 Vale la pena entender la ley del Tema 20.3 en dos partes separadas, porque esa separación reaparece en casi cualquier controlador basado en modelo, no solo en robótica.
@@ -227,6 +235,8 @@ Control de crucero adaptativo (prealimentación por el mapa de la ruta, realimen
 ---
 
 ## Tema 20.5 — Robustez: qué pasa cuando el modelo está mal
+
+**Código:** `codigo/bloque_20/romper_modelo_equivocado.py`
 
 ### 1. El problema
 

@@ -79,6 +79,8 @@ La actitud de un avión se describe clásicamente en RPY (de ahí el nombre); br
 
 ## Tema 9.2 — Bloqueo del cardán (*gimbal lock*)
 
+**Código:** `codigo/bloque_09/romper_gimbal_lock.py`
+
 ### 1. El problema
 
 En cierta orientación, dos de los tres ángulos de Euler parecen "fundirse" en uno solo: mover uno de ellos produce el mismo efecto que mover el otro, y de pronto ya no se puede alcanzar cualquier orientación cercana con un cambio pequeño de ángulos. Un giroscopio mecánico real (un *gimbal*, un anillo montado sobre otro anillo) se queda literalmente trabado en esa configuración — de ahí el nombre.
@@ -309,6 +311,8 @@ Cualquier sistema que combine una interfaz humana (grados, Euler) con un motor d
 ---
 
 ## Tema 9.6 — Interpolar orientaciones: por qué Euler da giros raros y SLERP no
+
+**Código:** `codigo/bloque_09/comparar_interpolacion.py`
 
 ### 1. El problema
 

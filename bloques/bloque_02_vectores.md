@@ -135,6 +135,8 @@ Trabajo mecánico ($W=\vec F\cdot\vec d$), potencia eléctrica en corriente alte
 
 ## Tema 2.3 — Producto cruz y torque
 
+**Código:** `codigo/bloque_02/demo_vectores.py`, `codigo/bloque_02/romper_orden_cruz.py`
+
 ### 1. El problema
 
 Una llave gira una tuerca porque se le aplica una fuerza a cierta distancia del eje. El efecto de giro (el torque) no es un número: tiene un eje de giro y un sentido (horario o antihorario visto desde cierto lado). Hace falta una operación que combine dos vectores —la posición donde se aplica la fuerza y la fuerza misma— y devuelva ese eje de giro.

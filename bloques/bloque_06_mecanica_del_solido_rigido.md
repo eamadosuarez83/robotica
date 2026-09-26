@@ -126,6 +126,8 @@ El par (torque) que debe entregar cada motor de un brazo (Bloques 14–16), el m
 
 ## Tema 6.3 — Momento de inercia y el teorema de Steiner
 
+**Código:** `codigo/bloque_06/romper_sin_steiner.py`
+
 ### 1. El problema
 
 $\tau=I\ddot\theta$ necesita $I$: un número que resuma qué tan "difícil" es hacer girar un cuerpo alrededor de un eje dado. Y ese número no es el mismo si el eje pasa por el centro de masa del eslabón o por su extremo (donde suele estar el motor que lo mueve) — hace falta saber relacionar ambos casos sin repetir la integral completa.
@@ -183,6 +185,8 @@ El "efecto pluma" de extender los brazos al patinar sobre hielo (aumenta $I$), e
 ---
 
 ## Tema 6.4 — El tensor de inercia: por qué en 3D la inercia es una matriz
+
+**Código:** `codigo/bloque_06/tensor_inercia_eslabon.py`
 
 ### 1. El problema
 
