@@ -58,7 +58,7 @@ exportar_bloque() {
   copia=$(preparar_md "$archivo")
   echo "-> $OUT/$base.pdf"
   pandoc "$copia" -o "$OUT/$base.pdf" \
-    --resource-path=. \
+    --resource-path=.:bloques \
     "${PANDOC_OPTS[@]}"
   rm -f "$copia"
 }
@@ -84,7 +84,7 @@ for f in FILOSOFIA.md ESTRUCTURA.md bloques/bloque_*.md; do
 done
 pandoc "${COPIAS[@]}" \
   -o "$OUT/curso_robotica_completo.pdf" \
-  --resource-path=. \
+  --resource-path=.:bloques \
   --toc \
   "${PANDOC_OPTS[@]}"
 rm -f "${COPIAS[@]}"

@@ -7,8 +7,11 @@ Crece bloque a bloque. Por ahora:
 - `simular`: integradores Euler y RK4 (Bloque 05).
 - `rotaciones`: rotx, roty, rotz, 3x3 (Bloque 08).
 - `orientacion`: Euler RPY/ZXZ, eje-ángulo, cuaterniones, SLERP (Bloque 09).
+- `homogeneas`: matrices de transformación homogénea 4x4 (Bloque 10).
+- `dh`, `brazo`: Denavit-Hartenberg y cinemática directa (Bloque 11).
 """
 
-from . import graficar, orientacion, rotaciones, simular, vectores
+from . import brazo, dh, graficar, homogeneas, orientacion, rotaciones, simular, vectores
 
-__all__ = ["vectores", "graficar", "simular", "rotaciones", "orientacion"]
+__all__ = ["vectores", "graficar", "simular", "rotaciones", "orientacion",
+           "homogeneas", "dh", "brazo"]

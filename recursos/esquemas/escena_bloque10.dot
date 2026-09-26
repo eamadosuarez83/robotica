@@ -1,0 +1,17 @@
+digraph escena {
+    rankdir=LR;
+    node [shape=box, style="rounded,filled", fillcolor="#eef3fb", color="#4a6fa5", fontname="Helvetica"];
+    edge [fontname="Helvetica", fontsize=11, color="#4a6fa5"];
+
+    mesa [label="mesa"];
+    base [label="base del robot"];
+    camara [label="cámara"];
+    huevo [label="huevo"];
+    pinza [label="pinza"];
+
+    mesa -> base [label="T_mesa_base (conocida)"];
+    base -> camara [label="T_base_camara (conocida)"];
+    camara -> huevo [label="T_camara_huevo (medida por visión)"];
+    base -> pinza [label="T_base_pinza (cinemática directa, Bloque 11)"];
+    pinza -> huevo [label="T_pinza_huevo = ? (lo que se busca)", style=dashed, color="#a54a4a", fontcolor="#a54a4a"];
+}
