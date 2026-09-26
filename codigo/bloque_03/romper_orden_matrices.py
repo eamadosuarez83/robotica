@@ -44,8 +44,8 @@ def main() -> None:
             "Primero refleja, luego rota 90°\n(matriz AB)")
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_03/romper_orden_matrices.png', dpi=130)
     plt.show()
-
     print("BA =\n", B @ A)
     print("AB =\n", A @ B)
     print("¿BA == AB?", np.allclose(B @ A, A @ B))

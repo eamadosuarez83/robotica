@@ -111,6 +111,8 @@ def main() -> None:
         ax.legend(fontsize=8)
         ax.grid(True, alpha=0.3)
         plt.tight_layout()
+        sufijo = "lento" if T == 3.0 else "rapido"
+        plt.savefig(f'recursos/capturas/bloque_20/control_comparado_{sufijo}.png', dpi=130)
         plt.show()
 
 

@@ -198,6 +198,8 @@ $\text{atan2}(4,-3) \approx 126.9°$ — correcto: cuadrante II. La diferencia c
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_01/romper_atan.py`, que calcula la orientación de un eslabón con `arctan(y/x)` y con `arctan2(y,x)` para los mismos puntos, y grafica ambos resultados para ver dónde se separan.
 
+![Cinco puntos con su vector (azul) y el ángulo que da atan mal en rojo punteado frente al que da atan2 bien en verde; en los puntos del segundo y tercer cuadrante el rojo apunta al lado opuesto](../recursos/capturas/bloque_01/romper_atan.png)
+
 ---
 
 ## Tema 1.4 — Coordenadas polares y la cinemática directa del brazo 2R
@@ -230,6 +232,8 @@ El **espacio de trabajo** (todos los puntos que la punta puede alcanzar) se obti
 ### 3. En la vida real
 
 Ver `codigo/bloque_01/cinematica_2r.py`: implementa `cinematica_directa_2r(theta1, theta2, L1, L2)` y genera la nube de puntos del espacio de trabajo.
+
+![A la izquierda, el brazo 2R dibujado en la postura θ1=40°, θ2=30°; a la derecha, la nube de puntos naranja que barre toda la punta al recorrer θ1 y θ2 en su rango, formando un anillo (el espacio de trabajo)](../recursos/capturas/bloque_01/cinematica_2r.png)
 
 ### 4. Limitaciones
 

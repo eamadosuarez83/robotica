@@ -198,7 +198,12 @@ El torque de cada articulación de un brazo robótico (Bloques 13 a 16), el mome
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_02/demo_vectores.py`, que dibuja en 3D el torque de una llave sobre una tuerca.
+
+![La llave (vector r, azul) y la fuerza aplicada (F, rojo) en 3D, con el torque resultante r×F (verde) perpendicular al plano que forman](../recursos/capturas/bloque_02/demo_vectores.png)
+
 - C2. Correr `codigo/bloque_02/romper_orden_cruz.py`, que invierte el orden del producto cruz del ejercicio anterior y grafica cómo el torque cambia de sentido.
+
+![Los mismos vectores r y F, con r×F (verde) y F×r (morado) apuntando en sentidos exactamente opuestos sobre el mismo eje](../recursos/capturas/bloque_02/romper_orden_cruz.png)
 
 ## Lo que este bloque agrega a `codigo/robotica/`
 

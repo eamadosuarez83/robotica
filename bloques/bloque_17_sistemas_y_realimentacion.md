@@ -285,6 +285,8 @@ Análisis de estabilidad de cualquier sistema dinámico: circuitos con realiment
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_17/romper_retardo.py`: agrega un retardo de transporte al lazo cerrado del Tema 17.4 (aproximado con un polo adicional, la aproximación de Padé) y aumenta el retardo hasta que un sistema antes estable empiece a oscilar sin decaer.
 
+![Respuesta al escalón del lazo cerrado para retardos L crecientes: con L pequeño se asienta cerca de la referencia, con L grande oscila sin decaer](../recursos/capturas/bloque_17/romper_retardo.png)
+
 ---
 
 ## Tema 17.6 — Diagramas de bloques
@@ -327,6 +329,8 @@ Cualquier diagrama de flujo de señal en ingeniería (circuitos, procesamiento d
 ### 7. Ejemplos resueltos
 
 **Ejemplo:** ver `codigo/bloque_17/modelo_articulacion.py`, que arma el diagrama de bloques planta+controlador proporcional con `control.feedback` y compara la respuesta al escalón resultante contra la planta sola (lazo abierto).
+
+![Dos paneles: en lazo abierto el ángulo crece sin límite ante un escalón de voltaje (polo en s=0); en lazo cerrado con control proporcional se asienta cerca de la referencia (línea punteada)](../recursos/capturas/bloque_17/modelo_articulacion.png)
 
 ### 8. Ejercicios
 

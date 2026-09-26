@@ -72,8 +72,7 @@ def main() -> None:
     ax2.grid(True, alpha=0.3)
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_05/romper_euler_paso_grande.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

@@ -269,6 +269,8 @@ Cualquier "banco de pruebas" de robots reales para practicar algoritmos antes de
 **Serie C — Laboratorio**
 - C1. Verificar B1 con `codigo/bloque_11/dh_2r_3r.py` y explorar, con el animador de deslizadores (`codigo/bloque_11/animar_deslizadores.py`), cómo se mueve `curso_3gdl` al variar cada articulación.
 
+  ![El brazo antropomórfico 3R curso_3gdl en q=0 (postura vertical), con un deslizador por articulación debajo del dibujo 3D](../recursos/capturas/bloque_11/animar_deslizadores.png)
+
 ---
 
 ## Tema 11.6 — DH estándar contra DH modificado (Craig)

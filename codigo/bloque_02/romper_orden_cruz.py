@@ -47,8 +47,7 @@ def main() -> None:
     ax.set_zlabel("z")
     ax.set_title("Invertir el orden del producto cruz invierte el torque")
     ax.legend()
+    plt.savefig('recursos/capturas/bloque_02/romper_orden_cruz.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

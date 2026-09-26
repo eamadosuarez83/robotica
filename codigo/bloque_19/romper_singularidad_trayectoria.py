@@ -65,8 +65,7 @@ def main() -> None:
     ax2.grid(True, alpha=0.3)
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_19/romper_singularidad_trayectoria.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

@@ -161,6 +161,8 @@ Grúas (cilíndricas o polares), impresoras 3D y fresadoras CNC (cartesianas), l
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_07/espacios_de_trabajo.py`: grafica el espacio de trabajo de un brazo cartesiano, uno SCARA y uno angular (2R plano, reutilizando el Bloque 01) lado a lado, y compararlos con B1.
 
+![Tres espacios de trabajo lado a lado: cartesiano PPP (una caja, corte x-z), SCARA RRP (un anillo, vista superior) y angular/antropomórfico RRR (2R plano, con un hueco cerca de la base)](../recursos/capturas/bloque_07/espacios_de_trabajo.png)
+
 ---
 
 ## Tema 7.4 — Muñeca, efector final y TCP

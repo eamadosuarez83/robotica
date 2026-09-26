@@ -53,8 +53,7 @@ def main() -> None:
     ax.legend()
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_19/comparar_espacios.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

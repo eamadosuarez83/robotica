@@ -360,6 +360,8 @@ Cinemática inversa numérica (Bloque 12), entrenamiento de modelos (métodos de
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_04/romper_diferencias_finitas.py`, que compara la derivada analítica de una función contra su derivada numérica con pasos $h$ muy grandes y muy pequeños, y muestra cómo aparece el error de redondeo cuando $h$ es demasiado pequeño.
 
+![Error de la derivada numérica contra h en escala log-log, con forma de V: crece hacia la izquierda por error de truncamiento (h grande) y hacia la derecha por error de redondeo (h demasiado pequeño)](../recursos/capturas/bloque_04/romper_diferencias_finitas.png)
+
 ## Lo que este bloque agrega a `codigo/robotica/`
 
 Nada todavía: las derivadas de este bloque se trabajan directamente con SymPy y NumPy en `codigo/bloque_04/`. La librería propia sigue creciendo desde el Bloque 05 (`robotica/simular.py`).

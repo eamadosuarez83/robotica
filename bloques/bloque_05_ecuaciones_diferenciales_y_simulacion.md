@@ -179,6 +179,8 @@ El resorte-amortiguador es el modelo de cualquier suspensión, de una articulaci
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_05/masa_resorte_amortiguador.py` y verificar B1 comparando la simulación con los valores dados.
 
+![x(t) del resorte-amortiguador (m=1, k=10, x0=1) en los tres regímenes: subamortiguado oscilando y decayendo, crítico volviendo a cero sin oscilar en el menor tiempo, y sobreamortiguado volviendo más lento y sin oscilar](../recursos/capturas/bloque_05/masa_resorte_amortiguador.png)
+
 ---
 
 ## Tema 5.4 — Solución analítica del sistema lineal de segundo orden
@@ -306,6 +308,8 @@ Simulación de cualquier sistema dinámico (circuitos, clima, órbitas), la din�
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_05/simular_pendulo.py`: compara Euler, RK4 y `solve_ivp` para el péndulo no lineal, mismo $h$, y grafica $\theta(t)$ de los tres métodos juntos.
 
+![θ(t) del péndulo no lineal (θ0=30°) con Euler, RK4 y solve_ivp (RK45) superpuestos, mismo paso h: RK4 prácticamente encima de solve_ivp, Euler ya visiblemente desviado](../recursos/capturas/bloque_05/simular_pendulo.png)
+
 ---
 
 ## Tema 5.6 — Paso de integración, estabilidad numérica y energía que aparece de la nada
@@ -358,6 +362,8 @@ Cualquier simulación física de largo plazo (clima, órbitas planetarias) donde
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_05/romper_euler_paso_grande.py`: simula el péndulo sin fricción con Euler para varios pasos $h$, grafica la energía contra el tiempo en cada caso, y compara contra RK4 con el mismo $h$ más grande.
+
+![Izquierda: energía mecánica del péndulo sin fricción con Euler para varios h (debería ser constante, crece con h grande) contra RK4 de referencia. Derecha: con Euler y h grande, la amplitud crece sola en vez de mantenerse en 30°](../recursos/capturas/bloque_05/romper_euler_paso_grande.png)
 
 ## Lo que este bloque agrega a `codigo/robotica/`
 

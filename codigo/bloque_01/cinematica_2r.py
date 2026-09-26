@@ -65,8 +65,7 @@ def main() -> None:
     ax.set_ylabel("y [m]")
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_01/cinematica_2r.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

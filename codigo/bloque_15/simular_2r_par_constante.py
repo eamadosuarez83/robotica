@@ -64,8 +64,8 @@ def main() -> None:
     ax.legend()
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_15/simular_2r_par_constante.png', dpi=130)
     plt.show()
-
     print(f"θ1 final: {np.degrees(Z[-1,0]):.1f}°, θ2 final: {np.degrees(Z[-1,1]):.1f}°")
     print("Con par constante y sin control, el brazo acelera sin límite (no hay nada")
     print("que lo frene): esto motiva el control del Bloque 18 en adelante.")

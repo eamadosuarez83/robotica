@@ -69,8 +69,7 @@ def main() -> None:
     ax.legend()
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_05/masa_resorte_amortiguador.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

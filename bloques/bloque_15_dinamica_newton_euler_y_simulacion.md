@@ -166,6 +166,8 @@ Cualquier simulador físico de un robot o mecanismo articulado (PyBullet, MuJoCo
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_15/simular_2r_par_constante.py`: simula el 2R con un par constante en cada motor usando dinámica directa y `robotica.simular.rk4`, y grafica $\theta_1(t),\theta_2(t)$.
 
+  ![θ1(t) y θ2(t) del 2R bajo un par constante en cada motor, sin control: los ángulos crecen sin límite](../recursos/capturas/bloque_15/simular_2r_par_constante.png)
+
 ---
 
 ## Tema 15.4 — Modelo en espacio de estados del brazo

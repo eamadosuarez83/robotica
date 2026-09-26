@@ -55,8 +55,8 @@ def main() -> None:
         ax.grid(True, alpha=0.3)
     axes[0].legend()
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_19/comparar_perfiles.png', dpi=130)
     plt.show()
-
     print("Saltos de velocidad en t=0 (lineal tiene el salto más grande):")
     for nombre, t, q, qd, qdd in datos:
         print(f"  {nombre:15s} qd(0)={qd[0]:8.2f}  qdd(0)={qdd[0]:8.2f}")

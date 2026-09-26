@@ -218,7 +218,9 @@ Cualquier giro puro alrededor de un eje principal: la rueda de un vehículo (alr
 - B1. Calcular $R_y(180°)$ y describir en palabras qué le hace al marco.
 
 **Serie C — Laboratorio**
-- C1. Verificar B1 con `robotica.rotaciones.roty` y comparar contra `scipy.spatial.transform.Rotation.from_euler('y', 180, degrees=True).as_matrix()`.
+- C1. Verificar B1 con `robotica.rotaciones.roty` y comparar contra `scipy.spatial.transform.Rotation.from_euler('y', 180, degrees=True).as_matrix()` (`codigo/bloque_08/visualizador_marcos_3d.py` también compara `rotx/roty/rotz` propias contra scipy para los tres ejes y dibuja el resultado).
+
+![Dos marcos de referencia 3D con ejes x-rojo, y-verde, z-azul: uno fijo en el origen y otro girado (rotz(40°)@rotx(30°)) desplazado a un lado](../recursos/capturas/bloque_08/visualizador_marcos_3d.png)
 
 ---
 
@@ -272,6 +274,8 @@ Instrucciones de vuelo de un avión (¿guiñada respecto a la Tierra o respecto 
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_08/romper_orden_rotaciones.py`: compone las mismas dos rotaciones premultiplicando y posmultiplicando, dibuja los dos marcos resultantes y muestra que la pinza termina apuntando en direcciones distintas.
+
+![Dos marcos 3D lado a lado: R1@R2 (ejes móviles) contra R2@R1 (ejes fijos), mismo par de rotaciones, resultado distinto en cada uno](../recursos/capturas/bloque_08/orden_composicion.png)
 
 ---
 
@@ -328,7 +332,9 @@ Por qué una imagen reflejada en un espejo no se puede obtener rotando la imagen
 - B1. Verificar a mano que $R_z(\theta)$ del Tema 8.4 cumple $R_z(\theta)^{-1}=R_z(\theta)^T=R_z(-\theta)$.
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
-- C1. Construir en Python una matriz con determinante $-1$ (invertir un eje de una rotación válida) y dibujar el marco resultante junto al original: debe verse "en espejo", no como un giro alcanzable.
+- C1. Construir en Python una matriz con determinante $-1$ (invertir un eje de una rotación válida) y dibujar el marco resultante junto al original: debe verse "en espejo", no como un giro alcanzable (`codigo/bloque_08/romper_orden_rotaciones.py`, función `parte2_reflexion`, lo hace).
+
+![Dos marcos 3D: uno con det(R)=+1 (rotación válida) y otro con un eje invertido, det=-1 (reflexión "en espejo", no alcanzable girando un objeto rígido)](../recursos/capturas/bloque_08/rotacion_vs_reflexion.png)
 
 ## Lo que este bloque agrega a `codigo/robotica/`
 

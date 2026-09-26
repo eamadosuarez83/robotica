@@ -127,6 +127,8 @@ El motivo histórico real (el Apolo 11 estuvo cerca de un bloqueo de cardán dur
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_09/romper_gimbal_lock.py`: lleva el cabeceo (pitch) a 90° y trata de girar la guiñada (yaw) por separado del alabeo (roll); graficar cómo el marco resultante no cambia al variar uno de los dos por separado, solo al variar su suma.
 
+![Cuatro marcos 3D con pitch=90° fijo y distintas combinaciones de roll/yaw: el marco resultante es idéntico entre ellos cuando yaw-roll se mantiene constante, evidenciando el bloqueo del cardán](../recursos/capturas/bloque_09/romper_gimbal_lock.png)
+
 ---
 
 ## Tema 9.3 — Eje y ángulo: toda rotación es un solo giro
@@ -358,6 +360,8 @@ Animación de cámaras y personajes en videojuegos y cine (SLERP es el estándar
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_09/comparar_interpolacion.py`: interpola entre dos orientaciones cercanas a un bloqueo del cardán con ángulos de Euler (interpolación lineal ingenua) y con SLERP, animando ambas para comparar.
+
+![Dos filas de marcos 3D en distintos instantes t: interpolación lineal ingenua de ángulos de Euler (arriba) contra SLERP de cuaterniones (abajo), cerca de un bloqueo del cardán](../recursos/capturas/bloque_09/comparar_interpolacion.png)
 
 ## Lo que este bloque agrega a `codigo/robotica/`
 

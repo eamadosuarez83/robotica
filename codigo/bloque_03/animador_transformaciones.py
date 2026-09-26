@@ -60,8 +60,7 @@ def main() -> None:
     for s in sliders:
         s.on_changed(actualizar)
 
+    plt.savefig('recursos/capturas/bloque_03/animador_transformaciones.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

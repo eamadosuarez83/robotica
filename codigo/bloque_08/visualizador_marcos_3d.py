@@ -57,8 +57,7 @@ def main() -> None:
     ax.set_zlabel("z")
     ax.set_title("Marcos de referencia (x rojo, y verde, z azul)")
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_08/visualizador_marcos_3d.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

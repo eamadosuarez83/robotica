@@ -147,6 +147,8 @@ Si esto no corre, hay que resolverlo antes de seguir: el resto del curso depende
 
 Antes de deducir nada, conviene ver la forma final de lo que se va a construir. `codigo/bloque_00/primera_figura.py` dibuja un brazo plano de dos eslabones ("dos palitos") con dos deslizadores que controlan el ángulo del hombro y del codo. Mover los deslizadores mueve la punta del brazo.
 
+![El brazo plano de dos eslabones con sus dos deslizadores](../recursos/capturas/bloque_00/primera_figura.png)
+
 Todavía no se explica la fórmula que ubica la punta (eso es el Bloque 01); por ahora basta con jugar con los deslizadores y notar dos cosas que el curso va a explicar con precisión más adelante:
 
 - Hay ángulos que el brazo no puede alcanzar sin "doblarse al revés" (codo arriba / codo abajo): eso es cinemática inversa (Bloque 12).

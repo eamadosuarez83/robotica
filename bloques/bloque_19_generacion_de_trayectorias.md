@@ -55,6 +55,8 @@ Cualquier robot industrial que suelda o pinta en línea recta usa interpolación
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_19/comparar_espacios.py`: grafica la trayectoria de la pinza del 2R para el mismo movimiento hecho en espacio articular y en espacio cartesiano, lado a lado.
 
+![Trayectoria de la pinza del 2R en el plano xy: interpolar en espacio articular da una curva distinta a interpolar directamente la posición cartesiana, para el mismo par de posturas inicial y final](../recursos/capturas/bloque_19/comparar_espacios.png)
+
 ---
 
 ## Tema 19.2 — Interpoladores: lineal, cúbico, quíntico
@@ -147,6 +149,8 @@ Ascensores y trenes de alta velocidad usan perfiles de aceleración tipo S para 
 ### 7. Ejemplos resueltos
 
 **Ejemplo:** ver `codigo/bloque_19/comparar_perfiles.py`, que agrega el trapezoidal y el perfil en S a la comparación del Tema 19.2, graficando también la aceleración para mostrar los saltos (o su ausencia).
+
+![Posición, velocidad y aceleración de los perfiles lineal, cúbico, trapezoidal y en S para el mismo movimiento de 0° a 90° en 2 s: se ve el salto de velocidad del lineal y los saltos de aceleración del cúbico y el trapezoidal, ausentes en el perfil S](../recursos/capturas/bloque_19/comparar_perfiles.png)
 
 ### 8. Ejercicios
 
@@ -251,6 +255,8 @@ Cualquier planificador de movimiento cartesiano de un robot industrial revisa, a
 ### 7. Ejemplos resueltos
 
 **Ejemplo:** ver `codigo/bloque_19/romper_singularidad_trayectoria.py`, que traza una línea recta cartesiana del 2R que cruza la postura de brazo estirado (la singularidad del Bloque 13, Tema 13.5) y muestra cómo la manipulabilidad cae a casi cero a mitad de camino, aunque `resolver_trayectoria` no reporte ningún error de alcanzabilidad.
+
+![Dos paneles: la línea recta cartesiana que cruza la postura de brazo estirado, y la manipulabilidad a lo largo del camino cayendo a casi cero justo en ese punto](../recursos/capturas/bloque_19/romper_singularidad_trayectoria.png)
 
 ### 8. Ejercicios
 

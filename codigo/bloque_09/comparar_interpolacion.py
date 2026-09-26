@@ -71,8 +71,7 @@ def main() -> None:
     fig.suptitle("Interpolación cerca del bloqueo del cardán: "
                   "Euler ingenuo (arriba) vs. SLERP (abajo)")
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_09/comparar_interpolacion.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

@@ -61,6 +61,8 @@ Toda animación 2D/3D (una matriz de "modelo" ubica cada objeto en la escena), c
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_03/animador_transformaciones.py`, escribir la matriz de B1 en los deslizadores y verificar que la cuadrícula se refleja como se predijo.
 
+![El animador en su estado inicial (A = identidad): la cuadrícula, los ejes x-y y el cuadrado unitario sin deformar, con det(A)=1.00, antes de mover los cuatro deslizadores a,b,c,d](../recursos/capturas/bloque_03/animador_transformaciones.png)
+
 ---
 
 ## Tema 3.2 — Composición de transformaciones: por qué el orden importa
@@ -119,6 +121,8 @@ Resultados distintos: $(0,-1)$ contra $(0,1)$.
 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_03/romper_orden_matrices.py`, que aplica dos transformaciones a la imagen de una casita en los dos órdenes posibles y grafica ambos resultados lado a lado.
+
+![La casita transformada por AB a la izquierda y por BA a la derecha: la misma escala y la misma rotación dan una casita distinta según el orden](../recursos/capturas/bloque_03/romper_orden_matrices.png)
 
 ---
 

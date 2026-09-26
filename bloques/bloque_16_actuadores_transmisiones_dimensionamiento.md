@@ -289,6 +289,8 @@ Con todos los ingredientes anteriores, falta el procedimiento completo: de una t
 
 `codigo/bloque_16/hoja_dimensionamiento.py` implementa este procedimiento completo para el hombro del 2R: genera un movimiento simple punto a punto, calcula $\tau(t)$ con `robotica.dinamica.newton_euler_plano` (Bloque 15), obtiene $\tau_{pico}$ y $\tau_{RMS}$, y evalúa varios pares motor+reductor candidatos contra esos requisitos.
 
+![Par requerido en el hombro del 2R durante un movimiento punto a punto, τ(t), con τ_pico y τ_RMS marcados](../recursos/capturas/bloque_16/hoja_dimensionamiento.png)
+
 ### 4. Limitaciones
 
 Este procedimiento dimensiona **una** articulación con **una** trayectoria representativa; un dimensionamiento riguroso repite el cálculo para varias trayectorias y posturas (las más exigentes del espacio de trabajo, Bloque 07) antes de decidir.
@@ -306,6 +308,8 @@ Dimensionar cualquier actuador (motores de vehículos eléctricos, compresores, 
 ### 7. Ejemplos resueltos
 
 **Ejemplo:** ver `codigo/bloque_16/romper_dimensionamiento_estatico.py` — el mismo hombro del 2R, dimensionado únicamente con el par estático de sostenimiento (Bloque 13), se satura claramente al pedirle un movimiento rápido, mientras que el mismo motor dimensionado con el par pico dinámico (este tema) tiene margen de sobra.
+
+![El par dinámico requerido τ(t) superando el límite del motor elegido solo por par estático, durante el movimiento rápido](../recursos/capturas/bloque_16/romper_dimensionamiento_estatico.png)
 
 ### 8. Ejercicios
 

@@ -54,9 +54,8 @@ def graficar_torque_llave() -> None:
     ax.set_zlabel("z")
     ax.set_title("Torque de una llave sobre una tuerca")
     ax.legend()
+    plt.savefig('recursos/capturas/bloque_02/demo_vectores.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     comparar_con_numpy()
     graficar_torque_llave()

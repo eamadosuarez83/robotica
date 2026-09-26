@@ -50,8 +50,7 @@ def main() -> None:
     ax.legend()
     ax.grid(True, which="both", alpha=0.3)
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_04/romper_diferencias_finitas.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

@@ -86,8 +86,7 @@ def main() -> None:
     ax2.grid(True, alpha=0.3)
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_14/lagrange_pendulo_doble.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

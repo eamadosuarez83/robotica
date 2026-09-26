@@ -133,6 +133,8 @@ El péndulo doble es famoso además por ser un ejemplo clásico de **caos**: par
 
 `codigo/bloque_14/lagrange_pendulo_doble.py` deduce las ecuaciones con SymPy y simula el péndulo doble con `robotica.simular.rk4` (Bloque 05), mostrando el comportamiento caótico para amplitudes grandes.
 
+![Dos paneles: θ1(t) de dos condiciones iniciales que difieren en 10⁻³ rad, y su diferencia divergiendo exponencialmente en escala logarítmica](../recursos/capturas/bloque_14/lagrange_pendulo_doble.png)
+
 ### 4. Limitaciones
 
 El modelo usa masas puntuales (sin tensor de inercia propio, Bloque 06); para varillas con masa distribuida hace falta incluir también la energía cinética de rotación de cada varilla.

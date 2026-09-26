@@ -52,8 +52,7 @@ def main() -> None:
     print("Coriolis -- los más sensibles al error de masa -- dominan más).")
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_20/romper_modelo_equivocado.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

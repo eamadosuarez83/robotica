@@ -59,8 +59,7 @@ def main() -> None:
     slider_theta1.on_changed(actualizar)
     slider_theta2.on_changed(actualizar)
 
+    plt.savefig('recursos/capturas/bloque_00/primera_figura.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

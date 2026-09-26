@@ -46,8 +46,7 @@ def main() -> None:
     ax.set_title("Par necesario en el hombro para sostener 60 g, según la postura del codo")
     ax.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_13/estatica_carga.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

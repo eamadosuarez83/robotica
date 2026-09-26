@@ -29,6 +29,10 @@ Un PID independiente (Bloque 18) no usa ningún término del modelo dinámico (B
 | Lento (3 s) | 3.78° |
 | Rápido (0.4 s) | 22.59° |
 
+![Seguimiento de θ1 con PID independiente, PD+gravedad y par calculado contra la referencia deseada, movimiento lento (T=3 s): las tres leyes siguen la referencia razonablemente bien](../recursos/capturas/bloque_20/control_comparado_lento.png)
+
+![Seguimiento de θ1 con PID independiente, PD+gravedad y par calculado contra la referencia deseada, movimiento rápido (T=0.4 s): PID y PD se quedan notoriamente atrás de la referencia, par calculado la sigue casi exacto](../recursos/capturas/bloque_20/control_comparado_rapido.png)
+
 El error crece casi 6 veces al acelerar el mismo movimiento — la manifestación numérica exacta del problema que abre el bloque.
 
 ### 4. Limitaciones
@@ -240,6 +244,8 @@ Si $\hat M\neq M$ (u otro término del modelo es impreciso), la cancelación exa
 |---|---|---|
 | 0% (modelo exacto) | 0.008° | 0.013° |
 | 30% | 2.48° | 3.71° |
+
+![Dos paneles: error de seguimiento de θ1 (lento y rápido) del par calculado con 0% y 30% de error de masa en el modelo — con el modelo exacto el error es casi nulo, con 30% de error crece notoriamente](../recursos/capturas/bloque_20/romper_modelo_equivocado.png)
 
 El error crece notoriamente con el 30% de error de masa, y crece más en el movimiento rápido —los términos de inercia y Coriolis, los más sensibles a un error de masa, pesan más ahí— consistente con el análisis del Tema 20.1.
 

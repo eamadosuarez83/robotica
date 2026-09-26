@@ -54,8 +54,7 @@ def main() -> None:
     ax2.grid(True, alpha=0.3)
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_17/modelo_articulacion.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

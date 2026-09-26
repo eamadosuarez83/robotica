@@ -39,9 +39,8 @@ def demo_atan_vs_atan2() -> None:
     ax.set_aspect("equal")
     ax.grid(True)
     ax.set_title("Rojo punteado = atan (mal) · Verde = atan2 (bien)")
+    plt.savefig('recursos/capturas/bloque_01/romper_atan.png', dpi=130)
     plt.show()
-
-
 def demo_grados_vs_radianes() -> None:
     """Pasar un angulo en grados a una funcion que espera radianes."""
     theta1_deg, theta2_deg = 40.0, 30.0

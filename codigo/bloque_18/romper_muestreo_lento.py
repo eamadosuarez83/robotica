@@ -56,8 +56,7 @@ def main() -> None:
     ax.grid(True, alpha=0.3)
     ax.set_ylim(-1, 4)
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_18/romper_muestreo_lento.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

@@ -47,8 +47,7 @@ def main() -> None:
     ax.set_title("Mapa de manipulabilidad del 2R\n(oscuro = cerca de singularidad)")
     plt.colorbar(sc, ax=ax, label="w = manipulabilidad")
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_13/mapa_manipulabilidad.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

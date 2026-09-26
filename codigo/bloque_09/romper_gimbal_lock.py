@@ -58,8 +58,7 @@ def main() -> None:
         ax.set_title(f"roll={roll_deg}°, yaw={yaw_deg}°\n(pitch=90° fijo)")
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_09/romper_gimbal_lock.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

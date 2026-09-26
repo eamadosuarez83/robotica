@@ -279,6 +279,8 @@ Determinante cero como aplastamiento del espacio (Bloque 03, Tema 3.4) — esta 
 **Serie C — Laboratorio** (`⚠ romperlo a propósito`)
 - C1. Correr `codigo/bloque_13/romper_singularidad.py`: lleva el 2R a brazo estirado ($\theta_2\to0$) y pide una velocidad hacia afuera; grafica cómo las velocidades articulares calculadas con $J^{-1}$ se disparan a medida que la postura se acerca a la singularidad.
 
+  ![Dos paneles: la velocidad articular necesaria (escala log) disparándose cuando θ2→0, y la manipulabilidad cayendo a cero en el mismo punto](../recursos/capturas/bloque_13/romper_singularidad.png)
+
 ---
 
 ## Tema 13.6 — Manipulabilidad
@@ -327,6 +329,8 @@ El número de condición de una matriz (una medida relacionada, usada en anális
 
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_13/mapa_manipulabilidad.py`: evalúa `manipulabilidad` en una malla de posturas $(\theta_1,\theta_2)$ del 2R y grafica un mapa de calor sobre el espacio de trabajo (Bloque 01, Tema 1.4).
+
+  ![Mapa de calor de la manipulabilidad del 2R sobre su espacio de trabajo en el plano xy; las zonas oscuras marcan cercanía a una singularidad](../recursos/capturas/bloque_13/mapa_manipulabilidad.png)
 
 ---
 
@@ -379,6 +383,8 @@ Dimensionar los motores de un brazo para la carga máxima que debe sostener (Blo
 
 **Serie C — Laboratorio**
 - C1. Correr `codigo/bloque_13/estatica_carga.py`: calcula el par de sostenimiento para un huevo (60 g) y para la pinza vacía en varias posturas, y grafica cómo cambia el par del hombro con la postura.
+
+  ![Par necesario en el hombro para sostener 60 g, en función del ángulo del codo θ2](../recursos/capturas/bloque_13/estatica_carga.png)
 
 ## Lo que este bloque agrega a `codigo/robotica/`
 

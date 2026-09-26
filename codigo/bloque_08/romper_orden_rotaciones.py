@@ -53,6 +53,7 @@ def parte1_orden_de_composicion():
         ax.set_title(titulo)
 
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_08/orden_composicion.png', dpi=130)
     plt.show()
 
 
@@ -73,6 +74,7 @@ def parte2_reflexion():
     ax.set_zlim(-1.5, 1.5)
     ax.set_title("Rotación contra reflexión")
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_08/rotacion_vs_reflexion.png', dpi=130)
     plt.show()
 
 

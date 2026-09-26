@@ -68,8 +68,7 @@ def main() -> None:
     espacio_scara(axes[1])
     espacio_angular_2r(axes[2])
     plt.tight_layout()
+    plt.savefig('recursos/capturas/bloque_07/espacios_de_trabajo.png', dpi=130)
     plt.show()
-
-
 if __name__ == "__main__":
     main()

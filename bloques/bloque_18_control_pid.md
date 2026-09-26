@@ -49,6 +49,8 @@ El PID es, con diferencia, el controlador más usado en la industria (más del 9
 
 **Ejemplo:** ver `codigo/bloque_18/pid_articulacion.py`, que compara P puro, PI y PID completo sobre la misma articulación del Bloque 17, mostrando cómo cada ganancia adicional corrige un problema distinto.
 
+![Respuesta a una referencia en escalón con una perturbación constante (carga externa) sumada al control: P se asienta con un error permanente por la perturbación, PI lo elimina, PID añade algo de amortiguamiento](../recursos/capturas/bloque_18/pid_articulacion.png)
+
 ### 8. Ejercicios
 
 **Serie A — Conceptuales**
@@ -199,6 +201,8 @@ Cualquier controlador PID sobre un actuador real (válvulas, motores, calefactor
 
 **Ejemplo:** ver `codigo/bloque_18/romper_windup.py`, que compara la misma sintonía PID con y sin anti-windup ante un escalón grande que satura el actuador — sin anti-windup, el sobrepaso es visiblemente mayor y tarda mucho más en asentarse.
 
+![Respuesta al escalón con el actuador saturado: sin anti-windup el sobrepaso es mucho mayor y tarda más en asentarse que con anti-windup](../recursos/capturas/bloque_18/romper_windup.png)
+
 ### 8. Ejercicios
 
 **Serie A — Conceptuales**
@@ -297,6 +301,8 @@ Todo controlador digital real (desde un termostato programable hasta el control 
 ### 7. Ejemplos resueltos
 
 **Ejemplo:** ver `codigo/bloque_18/romper_muestreo_lento.py`, que aumenta $T_s$ progresivamente sobre el mismo PID bien sintonizado hasta que la respuesta, antes suave, empieza a oscilar.
+
+![Respuesta al escalón del mismo PID con periodos de muestreo Ts crecientes: con Ts pequeño la respuesta es suave, con Ts grande empieza a oscilar](../recursos/capturas/bloque_18/romper_muestreo_lento.png)
 
 ### 8. Ejercicios
 
