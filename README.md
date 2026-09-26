@@ -34,6 +34,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 13 — Cinemática diferencial: la matriz Jacobiana](bloques/bloque_13_cinematica_diferencial_jacobiana.md) (cierra la Parte III)
 - [Bloque 14 — Dinámica por Lagrange-Euler](bloques/bloque_14_dinamica_lagrange_euler.md) (abre la Parte IV)
 - [Bloque 15 — Dinámica por Newton-Euler y simulación](bloques/bloque_15_dinamica_newton_euler_y_simulacion.md)
+- [Bloque 16 — Actuadores, transmisiones y dimensionamiento](bloques/bloque_16_actuadores_transmisiones_dimensionamiento.md) (cierra la Parte IV)
 
 ## Empezar
 
