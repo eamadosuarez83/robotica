@@ -37,6 +37,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 16 — Actuadores, transmisiones y dimensionamiento](bloques/bloque_16_actuadores_transmisiones_dimensionamiento.md) (cierra la Parte IV)
 - [Bloque 17 — Sistemas y realimentación](bloques/bloque_17_sistemas_y_realimentacion.md) (abre la Parte V)
 - [Bloque 18 — Control PID de una articulación](bloques/bloque_18_control_pid.md)
+- [Bloque 19 — Generación de trayectorias](bloques/bloque_19_generacion_de_trayectorias.md)
 
 ## Empezar
 

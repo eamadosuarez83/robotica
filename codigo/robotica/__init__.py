@@ -14,10 +14,12 @@ Crece bloque a bloque. Por ahora:
 - `dinamica`: ecuaciones de Lagrange, simbólico con SymPy (Bloque 14),
   y Newton-Euler recursivo (Bloque 15).
 - `control`: PID discreto con anti-windup (Bloque 18).
+- `trayectorias`: interpoladores articulares y curvas cartesianas (Bloque 19).
 """
 
 from . import (brazo, control, dh, dinamica, graficar, homogeneas, inversa,
-               jacobiana, orientacion, rotaciones, simular, vectores)
+               jacobiana, orientacion, rotaciones, simular, trayectorias, vectores)
 
 __all__ = ["vectores", "graficar", "simular", "rotaciones", "orientacion",
-           "homogeneas", "dh", "brazo", "inversa", "jacobiana", "dinamica", "control"]
+           "homogeneas", "dh", "brazo", "inversa", "jacobiana", "dinamica",
+           "control", "trayectorias"]
