@@ -36,6 +36,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 15 — Dinámica por Newton-Euler y simulación](bloques/bloque_15_dinamica_newton_euler_y_simulacion.md)
 - [Bloque 16 — Actuadores, transmisiones y dimensionamiento](bloques/bloque_16_actuadores_transmisiones_dimensionamiento.md) (cierra la Parte IV)
 - [Bloque 17 — Sistemas y realimentación](bloques/bloque_17_sistemas_y_realimentacion.md) (abre la Parte V)
+- [Bloque 18 — Control PID de una articulación](bloques/bloque_18_control_pid.md)
 
 ## Empezar
 

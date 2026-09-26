@@ -20,3 +20,6 @@ curso-robotica.zip
 .DS_Store
 *~
 .*.swp
+
+# Artefactos locales de Claude Code
+.claude/
