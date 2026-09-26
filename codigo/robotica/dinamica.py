@@ -67,16 +67,23 @@ def matriz_masas(ecuaciones, qddot) -> sp.Matrix:
     return sp.simplify(M)
 
 
-def separar_gravedad_y_coriolis(ecuaciones, M, qdot, qddot) -> tuple[sp.Matrix, sp.Matrix]:
-    """Separa lo que queda de cada ecuación tras restar M(q)q̈ en G(q)
+def separar_gravedad_y_coriolis(ecuaciones, qdot, qddot) -> tuple[sp.Matrix, sp.Matrix]:
+    """Separa lo que queda de cada ecuación tras quitar M(q)q̈ en G(q)
     (evaluando en q̇=0) y C(q,q̇)q̇ (el resto): M(q)q̈ + C(q,q̇)q̇ + G(q) = tau.
+
+    Cada ecuación es afín en q̈ (M(q) no depende de q̈, Tema 14.4), así
+    que el resto sin q̈ se obtiene evaluando directamente en q̈=0 --
+    exacto por construcción, sin depender de que una resta simbólica
+    como `eq - M·q̈` cancele: si M[i,j] y el coeficiente real de q̈_j
+    llegan en formas trigonométricas distintas (p.ej. sin²(q) vs.
+    cos(2q)), esa resta puede dejar un residuo de q̈ que ni `expand()`
+    ni `simplify()` garantizan cancelar.
     """
-    n = len(ecuaciones)
-    resto = [sp.expand(ecuaciones[i] - sum(M[i, j] * qddot[j] for j in range(n)))
-             for i in range(n)]
-    ceros = {qd: 0 for qd in qdot}
-    G = sp.Matrix([r.subs(ceros) for r in resto])
-    C_qdot = sp.Matrix([sp.simplify(resto[i] - G[i]) for i in range(n)])
+    ceros_qddot = {qdd: 0 for qdd in qddot}
+    resto = [eq.subs(ceros_qddot) for eq in ecuaciones]
+    ceros_qdot = {qd: 0 for qd in qdot}
+    G = sp.Matrix([r.subs(ceros_qdot) for r in resto])
+    C_qdot = sp.Matrix([sp.simplify(resto[i] - G[i]) for i in range(len(resto))])
     return G, C_qdot
 
 

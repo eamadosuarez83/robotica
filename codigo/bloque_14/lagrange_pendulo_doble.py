@@ -35,7 +35,7 @@ def deducir_modelo():
 
     ecuaciones, q, qdot, qddot = deducir_lagrange(K, U, [theta1, theta2], t)
     M = matriz_masas(ecuaciones, qddot)
-    G, C_qdot = separar_gravedad_y_coriolis(ecuaciones, M, qdot, qddot)
+    G, C_qdot = separar_gravedad_y_coriolis(ecuaciones, qdot, qddot)
     return M, G, C_qdot, q, qdot, (m1, m2, L1, L2, g)
 
 

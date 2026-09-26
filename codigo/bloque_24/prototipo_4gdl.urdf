@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<robot name="prototipo_4gdl">
+  <link name="base_link"/>
+  <link name="eslabon_1">
+    <inertial>
+      <origin xyz="0.015 0 0" rpy="0 0 0"/>
+      <mass value="0.024300"/>
+      <inertia ixx="0.00000127" ixy="0" ixz="0" iyy="0.00000228" iyz="0" izz="0.00000263"/>
+    </inertial>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <origin xyz="0.000000 0.000000 0.000000" rpy="0.000000 -0.000000 3.141593"/>
+    <parent link="base_link"/>
+    <child link="eslabon_1"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5"/>
+  </joint>
+  <link name="eslabon_2">
+    <inertial>
+      <origin xyz="0.065 0 0" rpy="0 0 0"/>
+      <mass value="0.105300"/>
+      <inertia ixx="0.00000548" ixy="0" ixz="0" iyy="0.00015027" iyz="0" izz="0.00015181"/>
+    </inertial>
+  </link>
+  <joint name="joint_2" type="revolute">
+    <origin xyz="0.000000 0.000000 0.030000" rpy="-1.570796 -1.570796 0.000000"/>
+    <parent link="eslabon_1"/>
+    <child link="eslabon_2"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5"/>
+  </joint>
+  <link name="eslabon_3">
+    <inertial>
+      <origin xyz="0.085 0 0" rpy="0 0 0"/>
+      <mass value="0.137700"/>
+      <inertia ixx="0.00000717" ixy="0" ixz="0" iyy="0.00033421" iyz="0" izz="0.00033622"/>
+    </inertial>
+  </link>
+  <joint name="joint_3" type="revolute">
+    <origin xyz="0.130000 0.000000 0.000000" rpy="-3.141593 -0.000000 -1.570796"/>
+    <parent link="eslabon_2"/>
+    <child link="eslabon_3"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5"/>
+  </joint>
+  <link name="eslabon_4">
+    <inertial>
+      <origin xyz="0.01 0 0" rpy="0 0 0"/>
+      <mass value="0.016200"/>
+      <inertia ixx="0.00000084" ixy="0" ixz="0" iyy="0.00000084" iyz="0" izz="0.00000108"/>
+    </inertial>
+  </link>
+  <joint name="joint_4" type="revolute">
+    <origin xyz="0.170000 0.000000 0.000000" rpy="1.570796 -0.000000 0.000000"/>
+    <parent link="eslabon_3"/>
+    <child link="eslabon_4"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.1416" upper="3.1416" effort="10" velocity="5"/>
+  </joint>
+  <link name="tcp"/>
+  <joint name="joint_tcp" type="fixed">
+    <origin xyz="0.02 0 0" rpy="0 0 0"/>
+    <parent link="eslabon_4"/>
+    <child link="tcp"/>
+  </joint>
+</robot>

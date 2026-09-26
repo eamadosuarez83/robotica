@@ -184,7 +184,7 @@ con $M$ la matriz de masas del Tema 14.5, y $\vec c,\vec g$ los términos de Cor
 from robotica.dinamica import deducir_lagrange, matriz_masas, separar_gravedad_y_coriolis
 ecuaciones, q, qdot, qddot = deducir_lagrange(K, U, [theta1, theta2], t)
 M = matriz_masas(ecuaciones, qddot)
-G, C_qdot = separar_gravedad_y_coriolis(ecuaciones, M, qdot, qddot)
+G, C_qdot = separar_gravedad_y_coriolis(ecuaciones, qdot, qddot)
 ```
 
 ### 4. Limitaciones

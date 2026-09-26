@@ -34,7 +34,7 @@ def construir_modelo(m1_val=M1, m2_val=M2):
     U = m1 * g * y1 + m2 * g * y2
     ecuaciones, q, qdot, qddot = deducir_lagrange(K, U, [theta1, theta2], t)
     M = matriz_masas(ecuaciones, qddot)
-    Gv, C_qdot = separar_gravedad_y_coriolis(ecuaciones, M, qdot, qddot)
+    Gv, C_qdot = separar_gravedad_y_coriolis(ecuaciones, qdot, qddot)
 
     valores = {m1: m1_val, m2: m2_val, L1s: L1, L2s: L2, g: G_GRAV}
     M_f = sp.lambdify(list(q), M.subs(valores), 'numpy')

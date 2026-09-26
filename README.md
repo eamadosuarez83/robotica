@@ -16,7 +16,7 @@ de dónde y en qué bloque está en
 
 ## Estado
 
-En desarrollo. Bloques publicados hasta ahora:
+**Completo: los 25 bloques (00-24) están escritos, probados y publicados.**
 
 - [Bloque 00 — Cómo usar el curso y preparar el entorno](bloques/bloque_00_bienvenida_y_entorno.md)
 - [Bloque 01 — Trigonometría y geometría del plano](bloques/bloque_01_trigonometria_geometria_plano.md)
@@ -42,6 +42,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 21 — Diseño mecánico y modelo digital](bloques/bloque_21_diseno_mecanico_y_modelo_digital.md) (abre la Parte VI)
 - [Bloque 22 — Hardware, calibración y seguridad](bloques/bloque_22_hardware_calibracion_y_seguridad.md)
 - [Bloque 23 — Programación de tareas](bloques/bloque_23_programacion_de_tareas.md)
+- [Bloque 24 — Proyecto integrador](bloques/bloque_24_proyecto_integrador.md) (cierra el curso)
 
 ## Empezar
 

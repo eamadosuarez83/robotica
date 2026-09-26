@@ -37,7 +37,7 @@ def construir_lagrange_n(n):
 
     ecuaciones, q, qdot, qddot = deducir_lagrange(K, U, thetas, t)
     M = matriz_masas(ecuaciones, qddot)
-    G, C_qdot = separar_gravedad_y_coriolis(ecuaciones, M, qdot, qddot)
+    G, C_qdot = separar_gravedad_y_coriolis(ecuaciones, qdot, qddot)
 
     valores = {g: 9.81}
     for i in range(n):
