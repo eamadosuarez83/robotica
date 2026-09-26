@@ -9,9 +9,10 @@ Crece bloque a bloque. Por ahora:
 - `orientacion`: Euler RPY/ZXZ, eje-ángulo, cuaterniones, SLERP (Bloque 09).
 - `homogeneas`: matrices de transformación homogénea 4x4 (Bloque 10).
 - `dh`, `brazo`: Denavit-Hartenberg y cinemática directa (Bloque 11).
+- `inversa`: cinemática inversa geométrica, por desacoplo y numérica (Bloque 12).
 """
 
-from . import brazo, dh, graficar, homogeneas, orientacion, rotaciones, simular, vectores
+from . import brazo, dh, graficar, homogeneas, inversa, orientacion, rotaciones, simular, vectores
 
 __all__ = ["vectores", "graficar", "simular", "rotaciones", "orientacion",
-           "homogeneas", "dh", "brazo"]
+           "homogeneas", "dh", "brazo", "inversa"]

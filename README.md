@@ -30,6 +30,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 09 — Localización espacial II: otras formas de decir la orientación](bloques/bloque_09_localizacion_espacial_ii_orientacion.md)
 - [Bloque 10 — Matrices de transformación homogénea](bloques/bloque_10_matrices_transformacion_homogenea.md) (cierra la localización espacial)
 - [Bloque 11 — Cinemática directa y Denavit-Hartenberg](bloques/bloque_11_cinematica_directa_y_denavit_hartenberg.md) (abre la Parte III)
+- [Bloque 12 — Cinemática inversa](bloques/bloque_12_cinematica_inversa.md)
 
 ## Empezar
 
