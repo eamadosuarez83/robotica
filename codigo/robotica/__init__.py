@@ -15,11 +15,13 @@ Crece bloque a bloque. Por ahora:
   y Newton-Euler recursivo planar (Bloque 15).
 - `control`: PID discreto con saturación y anti-windup, sintonía por
   Ziegler-Nichols y por ubicación de polos, simulación de lazo (Bloque 18).
+- `trayectorias`: cúbico, quíntico, trapezoidal, perfil en S, splines,
+  curvas cartesianas e inversa punto a punto (Bloque 19).
 """
 
 from . import (brazo, control, dh, dinamica, graficar, homogeneas, inversa,
-               jacobiana, orientacion, rotaciones, simular, vectores)
+               jacobiana, orientacion, rotaciones, simular, trayectorias, vectores)
 
 __all__ = ["vectores", "graficar", "simular", "rotaciones", "orientacion",
            "homogeneas", "dh", "brazo", "inversa", "jacobiana", "dinamica",
-           "control"]
+           "control", "trayectorias"]
