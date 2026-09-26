@@ -26,6 +26,8 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 05 — Ecuaciones diferenciales y simulación](bloques/bloque_05_ecuaciones_diferenciales_y_simulacion.md)
 - [Bloque 06 — Mecánica del sólido rígido](bloques/bloque_06_mecanica_del_solido_rigido.md) (cierra la Parte I)
 - [Bloque 07 — Morfología del robot](bloques/bloque_07_morfologia_del_robot.md) (abre la Parte II)
+- [Bloque 08 — Localización espacial I: posición y rotación](bloques/bloque_08_localizacion_espacial_i_posicion_y_rotacion.md)
+- [Bloque 09 — Localización espacial II: otras formas de decir la orientación](bloques/bloque_09_localizacion_espacial_ii_orientacion.md)
 
 ## Empezar
 
