@@ -24,6 +24,8 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 03 — Matrices como transformaciones](bloques/bloque_03_matrices_transformaciones.md)
 - [Bloque 04 — Cálculo para cosas que se mueven](bloques/bloque_04_calculo_para_cosas_que_se_mueven.md)
 - [Bloque 05 — Ecuaciones diferenciales y simulación](bloques/bloque_05_ecuaciones_diferenciales_y_simulacion.md)
+- [Bloque 06 — Mecánica del sólido rígido](bloques/bloque_06_mecanica_del_solido_rigido.md) (cierra la Parte I)
+- [Bloque 07 — Morfología del robot](bloques/bloque_07_morfologia_del_robot.md) (abre la Parte II)
 
 ## Empezar
 
