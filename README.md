@@ -31,6 +31,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 10 — Matrices de transformación homogénea](bloques/bloque_10_matrices_transformacion_homogenea.md) (cierra la localización espacial)
 - [Bloque 11 — Cinemática directa y Denavit-Hartenberg](bloques/bloque_11_cinematica_directa_y_denavit_hartenberg.md) (abre la Parte III)
 - [Bloque 12 — Cinemática inversa](bloques/bloque_12_cinematica_inversa.md)
+- [Bloque 13 — Cinemática diferencial: la matriz Jacobiana](bloques/bloque_13_cinematica_diferencial_jacobiana.md) (cierra la Parte III)
 
 ## Empezar
 
