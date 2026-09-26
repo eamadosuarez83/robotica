@@ -38,6 +38,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 17 — Sistemas y realimentación](bloques/bloque_17_sistemas_y_realimentacion.md) (abre la Parte V)
 - [Bloque 18 — Control PID de una articulación](bloques/bloque_18_control_pid.md)
 - [Bloque 19 — Generación de trayectorias](bloques/bloque_19_generacion_de_trayectorias.md)
+- [Bloque 20 — Control dinámico del brazo completo](bloques/bloque_20_control_dinamico_del_brazo_completo.md) (cierra la Parte V)
 
 ## Empezar
 
