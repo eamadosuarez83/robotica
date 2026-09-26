@@ -11,9 +11,11 @@ Crece bloque a bloque. Por ahora:
 - `dh`, `brazo`: Denavit-Hartenberg y cinemática directa (Bloque 11).
 - `inversa`: cinemática inversa geométrica, por desacoplo y numérica (Bloque 12).
 - `jacobiana`: Jacobiana geométrica, manipulabilidad, estática (Bloque 13).
+- `dinamica`: ecuaciones de Lagrange, simbólico con SymPy (Bloque 14).
 """
 
-from . import brazo, dh, graficar, homogeneas, inversa, jacobiana, orientacion, rotaciones, simular, vectores
+from . import (brazo, dh, dinamica, graficar, homogeneas, inversa, jacobiana,
+               orientacion, rotaciones, simular, vectores)
 
 __all__ = ["vectores", "graficar", "simular", "rotaciones", "orientacion",
-           "homogeneas", "dh", "brazo", "inversa", "jacobiana"]
+           "homogeneas", "dh", "brazo", "inversa", "jacobiana", "dinamica"]

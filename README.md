@@ -32,6 +32,7 @@ En desarrollo. Bloques publicados hasta ahora:
 - [Bloque 11 — Cinemática directa y Denavit-Hartenberg](bloques/bloque_11_cinematica_directa_y_denavit_hartenberg.md) (abre la Parte III)
 - [Bloque 12 — Cinemática inversa](bloques/bloque_12_cinematica_inversa.md)
 - [Bloque 13 — Cinemática diferencial: la matriz Jacobiana](bloques/bloque_13_cinematica_diferencial_jacobiana.md) (cierra la Parte III)
+- [Bloque 14 — Dinámica por Lagrange-Euler](bloques/bloque_14_dinamica_lagrange_euler.md) (abre la Parte IV)
 
 ## Empezar
 
